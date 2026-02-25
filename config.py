@@ -23,15 +23,21 @@ MAX_STELLAR_MASS_1E10MSUN_H = 50.0     # ~3e11 M_sun — exclude BCGs / massive 
 MAX_HALFMASS_GAS_CKPC_H     = 100.0    # ~150 physical kpc — galaxies, not subclusters
 
 # ── Image generation ──────────────────────────────────────────────────────────
-IMAGE_SIZE_PX  = 424                   # Zooniverse Galaxy Zoo standard (px × px)
+IMAGE_SIZE_PX  = 1024                  # High-resolution output (px × px)
 APERTURE_KPC   = 200.0                 # physical projection window half-width in kpc
                                        # → 400 kpc total → captures most JF tails
-N_PIXELS_GRID  = 512                   # internal render grid (downsampled to 424)
-SMOOTH_FACTOR  = 0.6                   # Gaussian smooth σ = SMOOTH_FACTOR × cell_radius
+N_PIXELS_GRID  = 1024                  # internal render grid (matches output; no downsampling)
+SMOOTH_FACTOR  = 0.3                   # Gaussian smooth σ = SMOOTH_FACTOR × cell_radius
+                                       # Reduced from 0.6 → less blurring, sharper features
+MULTISCALE_SMOOTH = True               # per-cell σ grouped into bins (True = realistic rendering)
+N_SMOOTH_BINS  = 8                     # number of σ-bins for multi-scale deposition
 LOG_SCALE      = True                  # log10 surface density
-COLORMAP       = "hot"                 # black bg → white/yellow core; shows tails well
-VMIN_PERCENTILE = 10                   # lower clip percentile for contrast
+COLORMAP       = "inferno"             # perceptually-uniform: dark bg → red → yellow → white
+                                       # better than "hot" for faint tail detection
+VMIN_PERCENTILE = 2                    # lower clip percentile (was 10; now shows faint tails)
 VMAX_PERCENTILE = 99.9                 # upper clip percentile
+ARCSINH_STRETCH = True                 # apply arcsinh stretch after log-scale normalisation
+ARCSINH_A      = 0.05                  # arcsinh softening: smaller → more contrast in faint regions
 
 # ── Cosmology (TNG uses Planck 2015) ─────────────────────────────────────────
 H0   = 67.74                           # km/s/Mpc

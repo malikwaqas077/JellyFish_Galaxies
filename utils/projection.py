@@ -6,6 +6,11 @@ Each gas cell has a position, mass, and density; we estimate its
 effective radius as r_eff = (3m / 4π ρ)^(1/3) and spread its
 mass contribution with a Gaussian kernel of width σ = SMOOTH_FACTOR * r_eff.
 
+Multi-scale smoothing:  cells are grouped into log-spaced σ bins.  Each
+bin is deposited onto its own grid and convolved with its representative σ,
+then all bins are summed.  This preserves the sharp dense core *and* the
+faint extended tail — both are rendered at their natural resolution.
+
 Projection is along the z-axis by default.
 Returns log10 surface-density map ready for colormapping.
 """
@@ -13,7 +18,75 @@ Returns log10 surface-density map ready for colormapping.
 import numpy as np
 from scipy.ndimage import gaussian_filter
 from config import (APERTURE_KPC, N_PIXELS_GRID, SMOOTH_FACTOR,
-                    LOG_SCALE, VMIN_PERCENTILE, VMAX_PERCENTILE, LITTLE_H)
+                    LOG_SCALE, VMIN_PERCENTILE, VMAX_PERCENTILE, LITTLE_H,
+                    MULTISCALE_SMOOTH, N_SMOOTH_BINS)
+
+
+def _multiscale_deposit(px, py, mass, sigma_px_all, ix, iy, valid, N):
+    """
+    Multi-scale mass deposition.
+
+    Cells are grouped into log-spaced σ bins.  Each bin is deposited onto
+    its own sub-grid and convolved with the bin's median σ, then all sub-grids
+    are summed.  This gives sharp, realistic rendering of both the dense core
+    (small σ) and the faint ram-pressure tail (large σ).
+
+    Parameters
+    ----------
+    px, py       : projected physical positions (kpc), length M (before valid mask)
+    mass         : cell masses, length M
+    sigma_px_all : per-cell σ in pixels, length M
+    ix, iy       : integer pixel indices, length M
+    valid        : boolean mask selecting in-bounds cells, length M
+    N            : grid side length in pixels
+
+    Returns
+    -------
+    grid : (N, N) float64 surface-density grid
+    """
+    grid_total = np.zeros((N, N), dtype=np.float64)
+
+    sigma_v = sigma_px_all[valid]
+    if sigma_v.size == 0:
+        return grid_total
+
+    # Log-spaced bin edges spanning the full σ range
+    log_min = np.log10(max(sigma_v.min(), 0.3))
+    log_max = np.log10(sigma_v.max())
+
+    if log_min >= log_max:
+        # All cells at same σ — single smooth pass
+        grid_total = np.zeros((N, N), dtype=np.float64)
+        np.add.at(grid_total, (iy[valid], ix[valid]), mass[valid])
+        return gaussian_filter(grid_total, sigma=float(sigma_v.mean()))
+
+    bin_edges = np.linspace(log_min, log_max, N_SMOOTH_BINS + 1)
+    log_sigma_v = np.log10(sigma_v)
+
+    for b in range(N_SMOOTH_BINS):
+        lo, hi = bin_edges[b], bin_edges[b + 1]
+        # Include upper edge in last bin to avoid losing cells
+        if b == N_SMOOTH_BINS - 1:
+            in_bin = (log_sigma_v >= lo)
+        else:
+            in_bin = (log_sigma_v >= lo) & (log_sigma_v < hi)
+
+        if not in_bin.any():
+            continue
+
+        # Indices into the original (pre-valid-mask) arrays
+        valid_idx = np.where(valid)[0]
+        bin_idx = valid_idx[in_bin]
+
+        grid_b = np.zeros((N, N), dtype=np.float64)
+        np.add.at(grid_b, (iy[bin_idx], ix[bin_idx]), mass[bin_idx])
+
+        # Representative σ for this bin (geometric mean)
+        sigma_rep = float(10 ** np.mean(log_sigma_v[in_bin]))
+        sigma_rep = np.clip(sigma_rep, 0.3, N / 8.0)
+        grid_total += gaussian_filter(grid_b, sigma=sigma_rep)
+
+    return grid_total
 
 
 def _to_physical_kpc(coords_ckpc_h, a=1.0):
@@ -78,7 +151,6 @@ def project_gas(coords_ckpc_h, masses_1e10msun_h, densities_1e10msun_h_kpc3,
 
     # Build 2-D surface-density grid
     N = N_PIXELS_GRID
-    grid = np.zeros((N, N), dtype=np.float64)
     cell_size = 2.0 * aperture_kpc / N               # kpc per pixel
 
     # Pixel indices for each cell centre
@@ -86,14 +158,19 @@ def project_gas(coords_ckpc_h, masses_1e10msun_h, densities_1e10msun_h_kpc3,
     iy = ((py + aperture_kpc) / cell_size).astype(int)
     valid = (ix >= 0) & (ix < N) & (iy >= 0) & (iy < N)
 
-    np.add.at(grid, (iy[valid], ix[valid]), mass[valid])
+    # Per-cell smoothing width in pixels
+    sigma_px_all = r_eff_kpc * SMOOTH_FACTOR / cell_size
+    sigma_px_all = np.clip(sigma_px_all, 0.3, N / 8.0)
 
-    # Per-cell Gaussian smoothing: spread mass with σ = SMOOTH_FACTOR * r_eff
-    # For efficiency we use a single median-σ global smooth plus per-cell deposit.
-    # For best accuracy we do a second pass blurring the grid by median r_eff.
-    sigma_px = np.median(r_eff_kpc[valid]) * SMOOTH_FACTOR / cell_size
-    sigma_px = np.clip(sigma_px, 0.5, N / 10)
-    grid = gaussian_filter(grid, sigma=sigma_px)
+    if MULTISCALE_SMOOTH:
+        grid = _multiscale_deposit(px, py, mass, sigma_px_all, ix, iy, valid, N)
+    else:
+        # Legacy: single global Gaussian with median σ
+        grid = np.zeros((N, N), dtype=np.float64)
+        np.add.at(grid, (iy[valid], ix[valid]), mass[valid])
+        sigma_global = float(np.median(sigma_px_all[valid]))
+        sigma_global = np.clip(sigma_global, 0.5, N / 10.0)
+        grid = gaussian_filter(grid, sigma=sigma_global)
 
     # Convert to surface density (M_sun/kpc²) — drop the 1e10 M_sun/h factor
     # for relative purposes; log-scale is what matters for the image
