@@ -25,7 +25,7 @@ from PIL import Image
 RNG = np.random.default_rng(42)
 
 
-def make_galaxy(n_cells=5000, kind="normal",
+def make_galaxy(n_cells=200_000, kind="normal",
                 aperture_kpc=200, little_h=0.6774):
     """
     Synthetic gas cell distribution in ckpc/h centred at origin.
@@ -85,7 +85,7 @@ def make_galaxy(n_cells=5000, kind="normal",
 
     # Density: M / (4/3 π r_cell^3), r_cell ~ median separation
     # Use a simple proxy: density ∝ mass (uniform cell size)
-    r_cell_ckpc_h = 0.5 * little_h    # 0.5 kpc per cell
+    r_cell_ckpc_h = 2.0 * little_h    # ~2 kpc per cell — realistic TNG resolution
     vol_cell = (4/3) * np.pi * r_cell_ckpc_h**3
     densities = masses / vol_cell
 
@@ -106,7 +106,7 @@ def run_synthetic_test():
     results = []
     for i, (kind, label) in enumerate(cases):
         print(f"Rendering: {label} ...")
-        coords, masses, densities = make_galaxy(n_cells=8000, kind=kind)
+        coords, masses, densities = make_galaxy(n_cells=200_000, kind=kind)
         centre = np.zeros(3)
 
         image, extent = project_gas(
