@@ -12,8 +12,8 @@ of how massive its host cluster is.
 Post-processing:
   1. Auto-detect the dark square plot area and crop it
   2. Skip the top annotation strip (title, scale bar, z=0.0)
-  3. Invert TNG's jet HSV hue → scalar gas density
-  4. Re-apply the 'hot' colormap (black→red→orange→yellow→white)
+  3. Erase bottom-left simulation label
+  4. Keep the original TNG jet colormap (dark blue bg → cyan → green → yellow → red)
   5. Resize to IMAGE_SIZE_PX and save
 
 Reads  : output/data/galaxy_list.csv
@@ -49,10 +49,6 @@ APERTURE_KPC = 200.0
 
 # Fraction of plot height to skip at top (title / scale bar / z=0.0 annotation)
 TOP_SKIP_FRAC = 0.09
-
-# Hot-colormap contrast percentiles (signal pixels only)
-VMIN_PCT = 2.0
-VMAX_PCT = 99.5
 
 # Polite rate-limiting
 REQUEST_DELAY = 0.3
@@ -110,48 +106,6 @@ def _detect_plot_bounds(arr):
     return left, top, right + 1, bottom + 1
 
 
-# ── Jet colormap inversion ─────────────────────────────────────────────────────
-
-def _extract_density_from_jet(arr_rgb):
-    """
-    Invert TNG's jet colormap back to a scalar density map [0, 1].
-
-    Jet hue: 240° (blue/background) → 0° (red/dense).
-    density = clip((240 - hue_deg) / 240, 0, 1).
-    Pixels with Cmax < 0.10 (very dark) are treated as background (density=0).
-    """
-    f     = arr_rgb.astype(np.float32) / 255.0
-    r, g, b = f[..., 0], f[..., 1], f[..., 2]
-    Cmax  = f.max(axis=2)
-    delta = Cmax - f.min(axis=2)
-
-    hue = np.zeros(Cmax.shape, dtype=np.float32)
-    m   = delta > 0.0
-    mr  = m & (Cmax == r)
-    mg  = m & (Cmax == g)
-    mb  = m & (Cmax == b)
-
-    hue[mr] = (60.0 * ((g[mr] - b[mr]) / delta[mr])) % 360.0
-    hue[mg] =  60.0 * ((b[mg] - r[mg]) / delta[mg]) + 120.0
-    hue[mb] =  60.0 * ((r[mb] - g[mb]) / delta[mb]) + 240.0
-
-    density = np.clip((240.0 - hue) / 240.0, 0.0, 1.0)
-    density[Cmax < 0.10] = 0.0
-    return density
-
-
-def _apply_hot_colormap(density):
-    """Percentile-normalise density and apply the 'hot' colormap → uint8 RGB."""
-    signal = density[density > 0.01]
-    if signal.size == 0:
-        return np.zeros((*density.shape, 3), dtype=np.uint8)
-    vmin = float(np.percentile(signal, VMIN_PCT))
-    vmax = float(np.percentile(signal, VMAX_PCT))
-    if vmax <= vmin:
-        vmax = vmin + 1e-6
-    normed = np.clip((density - vmin) / (vmax - vmin), 0.0, 1.0)
-    rgba   = plt.get_cmap("hot")(normed)
-    return (rgba[:, :, :3] * 255).astype(np.uint8)
 
 
 # ── Main crop + render ─────────────────────────────────────────────────────────
@@ -160,8 +114,9 @@ def crop_and_save(pil_img, subhalo_id, grnr):
     """
     1. Auto-detect the square plot area and crop.
     2. Skip top annotation strip.
-    3. Invert jet → density → hot colormap.
-    4. Resize to IMAGE_SIZE_PX and save.
+    3. Erase bottom-left simulation label (paint dark blue).
+    4. Keep original TNG jet colormap (dark blue bg → cyan → green → yellow → red).
+    5. Resize to IMAGE_SIZE_PX and save.
     """
     arr = np.array(pil_img)
     box = _detect_plot_bounds(arr)
@@ -173,15 +128,12 @@ def crop_and_save(pil_img, subhalo_id, grnr):
     data = plot[skip:, :].copy()
 
     # Erase bottom-left annotation (simulation name label) by painting
-    # it to the TNG plot background colour (dark blue) before jet inversion.
-    # The dark blue hue (≈240°) maps to density≈0 → black after inversion.
+    # it to the TNG plot background colour (dark blue).
     bot_h = int(0.97 * data.shape[0])
-    data[bot_h:, : data.shape[1] // 2] = (10, 10, 60)
+    data[bot_h:, : data.shape[1] // 2] = (0, 0, 128)  # dark blue matching TNG bg
 
-    density = _extract_density_from_jet(data)
-    hot_rgb = _apply_hot_colormap(density)
-
-    final = Image.fromarray(hot_rgb).resize(
+    # Keep original jet colormap — no inversion
+    final = Image.fromarray(data).resize(
         (IMAGE_SIZE_PX, IMAGE_SIZE_PX), Image.LANCZOS
     )
     fname = f"halo{int(grnr):06d}_sub{int(subhalo_id):07d}_z.png"
