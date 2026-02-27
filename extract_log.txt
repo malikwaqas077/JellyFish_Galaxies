@@ -1,0 +1,13 @@
+Processing 24 clusters ...
+  [1/24] grnr=0  M~2.594e+15  R200~2198 kpc  ...  2000 candidate satellites  -> 27 kept (gas + stellar mass cuts)
+  [2/24] grnr=1  M~4.611e+13  R200~574 kpc  ...  415 candidate satellites  -> 30 kept (gas + stellar mass cuts)
+  [3/24] grnr=2  M~1.489e+14  R200~848 kpc  ...  465 candidate satellites  -> 22 kept (gas + stellar mass cuts)
+  [4/24] grnr=3  M~5.385e+13  R200~604 kpc  ...  238 candidate satellites  -> 31 kept (gas + stellar mass cuts)
+  [5/24] grnr=4  M~1.329e+14  R200~816 kpc  ...  259 candidate satellites  -> 2 kept (gas + stellar mass cuts)
+  [6/24] grnr=5  M~7.594e+13  R200~678 kpc  ...  72 candidate satellites  -> 5 kept (gas + stellar mass cuts)
+  [7/24] grnr=6  M~5.085e+13  R200~593 kpc  ...  207 candidate satellites  -> 20 kept (gas + stellar mass cuts)
+  [8/24] grnr=7  M~8.581e+13  R200~706 kpc  ...  103 candidate satellites  -> 3 kept (gas + stellar mass cuts)
+  [9/24] grnr=8  M~6.945e+13  R200~658 kpc  ...  49 candidate satellites  -> 2 kept (gas + stellar mass cuts)
+  [10/24] grnr=9  M~5.130e+13  R200~594 kpc  ...  121 candidate satellites  -> 10 kept (gas + stellar mass cuts)
+  [11/24] grnr=10  M~3.939e+13  R200~544 kpc  ...  22 candidate satellites  -> 2 kept (gas + stellar mass cuts)
+  [12/24] grnr=11  M~3.533e+13  R200~525 kpc  ...

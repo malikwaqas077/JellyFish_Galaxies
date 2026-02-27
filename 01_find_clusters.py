@@ -23,10 +23,10 @@ from utils.tng_api import get_json, paginate
 
 OUTPUT_FILE = os.path.join(DATA_DIR, "clusters.csv")
 
-# proxy threshold: BCG total mass > 10^13.5 M_sun ~ 3e13 M_sun
-# This captures all clusters AND massive groups (where jellyfish are also found)
-BCG_MASS_LOG_MIN = 13.5
-MAX_BCG_FETCH    = 800      # TNG300-1 has ~700 clusters; 800 is safe upper bound
+# proxy threshold: BCG total mass > 10^12.7 M_sun ~ 5e12 M_sun
+# EXTREMELY LOW to capture ALL possible groups/clusters for 1000+ images
+BCG_MASS_LOG_MIN = 12.7
+MAX_BCG_FETCH    = 5000     # Allow ALL clusters in TNG-Cluster
 
 
 def fetch_bcg_details(bcg_summary):
