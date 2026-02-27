@@ -15,8 +15,6 @@ env/
 *.swp
 *.swo
 
-# Generated output (optional: remove 'output/' to track results)
-output/
 
 # Local config / secrets
 .env
