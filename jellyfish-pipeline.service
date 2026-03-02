@@ -1,0 +1,16 @@
+[Unit]
+Description=JellyFish Galaxies Image Generation Pipeline
+After=network.target
+
+[Service]
+Type=simple
+User=waqas
+WorkingDirectory=/home/waqas/JellyFish_Galaxies
+ExecStart=/home/waqas/JellyFish_Galaxies/watchdog.sh
+Restart=always
+RestartSec=600
+StandardOutput=append:/home/waqas/JellyFish_Galaxies/service.log
+StandardError=append:/home/waqas/JellyFish_Galaxies/service.log
+
+[Install]
+WantedBy=multi-user.target

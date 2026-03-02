@@ -1,0 +1,4 @@
+Processing 83 clusters ...
+  [1/83] grnr=0  M~2.594e+15  R200~2198 kpc  ...  2000 candidate satellites  -> 171 kept (gas + stellar mass cuts)
+  [2/83] grnr=1  M~4.611e+13  R200~574 kpc  ...  415 candidate satellites  -> 37 kept (gas + stellar mass cuts)
+  [3/83] grnr=2  M~1.489e+14  R200~848 kpc  ...  465 candidate satellites  ->

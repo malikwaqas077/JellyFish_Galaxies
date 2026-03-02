@@ -1,0 +1,1240 @@
+[2026-02-27 06:50:48] === Watchdog Check ===
+[2026-02-27 06:50:48] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 06:50:53] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 06:50:53] Extraction started (PID: 163188)
+[2026-02-27 06:50:53] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 07:00:01] === Watchdog Check ===
+[2026-02-27 07:00:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 07:00:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 07:00:06] Extraction started (PID: 163528)
+[2026-02-27 07:00:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 07:10:01] === Watchdog Check ===
+[2026-02-27 07:10:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 07:10:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 07:10:06] Extraction started (PID: 163732)
+[2026-02-27 07:10:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 07:20:01] === Watchdog Check ===
+[2026-02-27 07:20:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 07:20:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 07:20:06] Extraction started (PID: 163919)
+[2026-02-27 07:20:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 07:30:01] === Watchdog Check ===
+[2026-02-27 07:30:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 07:30:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 07:30:06] Extraction started (PID: 164103)
+[2026-02-27 07:30:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 07:40:01] === Watchdog Check ===
+[2026-02-27 07:40:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 07:40:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 07:40:06] Extraction started (PID: 164331)
+[2026-02-27 07:40:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 07:50:01] === Watchdog Check ===
+[2026-02-27 07:50:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 07:50:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 07:50:06] Extraction started (PID: 164510)
+[2026-02-27 07:50:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 08:00:01] === Watchdog Check ===
+[2026-02-27 08:00:02] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 08:00:07] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 08:00:07] Extraction started (PID: 164691)
+[2026-02-27 08:00:07] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 08:10:01] === Watchdog Check ===
+[2026-02-27 08:10:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 08:10:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 08:10:06] Extraction started (PID: 164910)
+[2026-02-27 08:10:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 08:20:01] === Watchdog Check ===
+[2026-02-27 08:20:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 08:20:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 08:20:06] Extraction started (PID: 165112)
+[2026-02-27 08:20:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 08:30:01] === Watchdog Check ===
+[2026-02-27 08:30:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 08:30:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 08:30:06] Extraction started (PID: 165297)
+[2026-02-27 08:30:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 08:40:01] === Watchdog Check ===
+[2026-02-27 08:40:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 08:40:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 08:40:06] Extraction started (PID: 165481)
+[2026-02-27 08:40:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 08:50:01] === Watchdog Check ===
+[2026-02-27 08:50:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 08:50:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 08:50:06] Extraction started (PID: 165669)
+[2026-02-27 08:50:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 09:00:01] === Watchdog Check ===
+[2026-02-27 09:00:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 09:00:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 09:00:06] Extraction started (PID: 165887)
+[2026-02-27 09:00:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 09:10:01] === Watchdog Check ===
+[2026-02-27 09:10:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 09:10:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 09:10:06] Extraction started (PID: 166204)
+[2026-02-27 09:10:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 09:20:01] === Watchdog Check ===
+[2026-02-27 09:20:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 09:20:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 09:20:06] Extraction started (PID: 166420)
+[2026-02-27 09:20:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 09:30:01] === Watchdog Check ===
+[2026-02-27 09:30:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 09:30:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 09:30:06] Extraction started (PID: 166604)
+[2026-02-27 09:30:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 09:40:02] === Watchdog Check ===
+[2026-02-27 09:40:02] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 09:40:07] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 09:40:07] Extraction started (PID: 166772)
+[2026-02-27 09:40:07] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 09:50:01] === Watchdog Check ===
+[2026-02-27 09:50:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 09:50:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 09:50:06] Extraction started (PID: 166937)
+[2026-02-27 09:50:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 10:00:01] === Watchdog Check ===
+[2026-02-27 10:00:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 10:00:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 10:00:06] Extraction started (PID: 167143)
+[2026-02-27 10:00:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 10:10:01] === Watchdog Check ===
+[2026-02-27 10:10:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 10:10:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 10:10:06] Extraction started (PID: 167324)
+[2026-02-27 10:10:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-27 10:20:01] === Watchdog Check ===
+[2026-02-27 10:20:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-02-27 10:20:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-02-27 10:20:06] Extraction started (PID: 167500)
+[2026-02-27 10:20:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-02-28 06:09:46] === Watchdog Check ===
+[2026-02-28 06:09:46] ✓ Extraction complete
+[2026-02-28 06:09:46] ⚠️  Image generation not running! Starting...
+[2026-02-28 06:09:46] Starting parallel image generation (774 galaxies)
+[2026-02-28 06:09:46] Image generation started (PID: 183472)
+[2026-02-28 06:09:46] Stats: Clusters=188, Galaxies=774, Images=632
+[2026-02-28 06:10:01] === Watchdog Check ===
+[2026-02-28 06:10:01] ✓ Extraction complete
+[2026-02-28 06:10:01] ✓ Image generation running (633/774 images, 141 remaining)
+[2026-02-28 06:10:01] Stats: Clusters=188, Galaxies=774, Images=633
+[2026-02-28 06:20:01] === Watchdog Check ===
+[2026-02-28 06:20:01] ✓ Extraction complete
+[2026-02-28 06:20:01] ✓ Image generation running (707/774 images, 67 remaining)
+[2026-02-28 06:20:01] Stats: Clusters=188, Galaxies=774, Images=707
+[2026-02-28 06:30:01] === Watchdog Check ===
+[2026-02-28 06:30:01] ✓ Extraction complete
+[2026-02-28 06:30:02] ⚠️  Image generation not running! Starting...
+[2026-02-28 06:30:02] Starting parallel image generation (774 galaxies)
+[2026-02-28 06:30:02] Image generation started (PID: 185153)
+[2026-02-28 06:30:02] Stats: Clusters=188, Galaxies=774, Images=752
+[2026-02-28 06:40:01] === Watchdog Check ===
+[2026-02-28 06:40:01] ✓ Extraction complete
+[2026-02-28 06:40:01] ⚠️  Image generation not running! Starting...
+[2026-02-28 06:40:01] Starting parallel image generation (774 galaxies)
+[2026-02-28 06:40:01] Image generation started (PID: 185315)
+[2026-02-28 06:40:01] Stats: Clusters=188, Galaxies=774, Images=752
+[2026-02-28 06:50:01] === Watchdog Check ===
+[2026-02-28 06:50:01] ✓ Extraction complete
+[2026-02-28 06:50:01] ⚠️  Image generation not running! Starting...
+[2026-02-28 06:50:01] Starting parallel image generation (774 galaxies)
+[2026-02-28 06:50:01] Image generation started (PID: 185938)
+[2026-02-28 06:50:01] Stats: Clusters=188, Galaxies=774, Images=752
+[2026-02-28 07:00:01] === Watchdog Check ===
+[2026-02-28 07:00:01] ✓ Extraction complete
+[2026-02-28 07:00:01] ⚠️  Image generation not running! Starting...
+[2026-02-28 07:00:01] Starting parallel image generation (774 galaxies)
+[2026-02-28 07:00:01] Image generation started (PID: 186086)
+[2026-02-28 07:00:01] Stats: Clusters=188, Galaxies=774, Images=752
+[2026-02-28 07:10:01] === Watchdog Check ===
+[2026-02-28 07:10:01] ✓ Extraction complete
+[2026-02-28 07:10:01] ⏸️  Image generation paused (see .pause_generation file)
+[2026-02-28 07:10:01] Stats: Clusters=188, Galaxies=774, Images=752
+[2026-02-28 07:20:01] === Watchdog Check ===
+[2026-02-28 07:20:01] ✓ Extraction complete
+[2026-02-28 07:20:01] ⏸️  Image generation paused (see .pause_generation file)
+[2026-02-28 07:20:01] Stats: Clusters=188, Galaxies=774, Images=752
+[2026-02-28 07:30:01] === Watchdog Check ===
+[2026-02-28 07:30:01] ✓ Extraction complete
+[2026-02-28 07:30:01] ⏸️  Image generation paused (see .pause_generation file)
+[2026-02-28 07:30:01] Stats: Clusters=188, Galaxies=774, Images=752
+[2026-02-28 07:40:01] === Watchdog Check ===
+[2026-02-28 07:40:01] ✓ Extraction complete
+[2026-02-28 07:40:01] ⏸️  Image generation paused (see .pause_generation file)
+[2026-02-28 07:40:01] Stats: Clusters=188, Galaxies=774, Images=752
+[2026-02-28 07:47:36] === Watchdog Check ===
+[2026-02-28 07:47:36] ✓ Extraction complete
+[2026-02-28 07:47:36] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 07:47:36]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 07:50:01] === Watchdog Check ===
+[2026-02-28 07:50:01] ✓ Extraction complete
+[2026-02-28 07:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 07:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 08:00:01] === Watchdog Check ===
+[2026-02-28 08:00:01] ✓ Extraction complete
+[2026-02-28 08:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 08:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 08:10:01] === Watchdog Check ===
+[2026-02-28 08:10:01] ✓ Extraction complete
+[2026-02-28 08:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 08:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 08:20:01] === Watchdog Check ===
+[2026-02-28 08:20:01] ✓ Extraction complete
+[2026-02-28 08:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 08:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 08:30:01] === Watchdog Check ===
+[2026-02-28 08:30:01] ✓ Extraction complete
+[2026-02-28 08:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 08:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 08:40:01] === Watchdog Check ===
+[2026-02-28 08:40:01] ✓ Extraction complete
+[2026-02-28 08:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 08:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 08:50:01] === Watchdog Check ===
+[2026-02-28 08:50:01] ✓ Extraction complete
+[2026-02-28 08:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 08:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 09:00:01] === Watchdog Check ===
+[2026-02-28 09:00:01] ✓ Extraction complete
+[2026-02-28 09:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 09:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 09:10:01] === Watchdog Check ===
+[2026-02-28 09:10:01] ✓ Extraction complete
+[2026-02-28 09:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 09:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 09:20:01] === Watchdog Check ===
+[2026-02-28 09:20:01] ✓ Extraction complete
+[2026-02-28 09:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 09:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 09:30:01] === Watchdog Check ===
+[2026-02-28 09:30:01] ✓ Extraction complete
+[2026-02-28 09:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 09:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 09:40:02] === Watchdog Check ===
+[2026-02-28 09:40:02] ✓ Extraction complete
+[2026-02-28 09:40:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 09:40:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 09:50:01] === Watchdog Check ===
+[2026-02-28 09:50:01] ✓ Extraction complete
+[2026-02-28 09:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 09:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 10:00:01] === Watchdog Check ===
+[2026-02-28 10:00:01] ✓ Extraction complete
+[2026-02-28 10:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 10:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 10:10:01] === Watchdog Check ===
+[2026-02-28 10:10:01] ✓ Extraction complete
+[2026-02-28 10:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 10:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 10:20:01] === Watchdog Check ===
+[2026-02-28 10:20:01] ✓ Extraction complete
+[2026-02-28 10:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 10:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 10:30:01] === Watchdog Check ===
+[2026-02-28 10:30:01] ✓ Extraction complete
+[2026-02-28 10:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 10:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 10:40:01] === Watchdog Check ===
+[2026-02-28 10:40:01] ✓ Extraction complete
+[2026-02-28 10:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 10:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 10:50:01] === Watchdog Check ===
+[2026-02-28 10:50:01] ✓ Extraction complete
+[2026-02-28 10:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 10:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 11:00:01] === Watchdog Check ===
+[2026-02-28 11:00:01] ✓ Extraction complete
+[2026-02-28 11:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 11:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 11:10:01] === Watchdog Check ===
+[2026-02-28 11:10:01] ✓ Extraction complete
+[2026-02-28 11:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 11:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 11:20:01] === Watchdog Check ===
+[2026-02-28 11:20:01] ✓ Extraction complete
+[2026-02-28 11:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 11:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 11:30:01] === Watchdog Check ===
+[2026-02-28 11:30:01] ✓ Extraction complete
+[2026-02-28 11:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 11:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 11:40:01] === Watchdog Check ===
+[2026-02-28 11:40:01] ✓ Extraction complete
+[2026-02-28 11:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 11:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 11:50:01] === Watchdog Check ===
+[2026-02-28 11:50:01] ✓ Extraction complete
+[2026-02-28 11:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 11:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 12:00:01] === Watchdog Check ===
+[2026-02-28 12:00:01] ✓ Extraction complete
+[2026-02-28 12:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 12:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 12:10:01] === Watchdog Check ===
+[2026-02-28 12:10:01] ✓ Extraction complete
+[2026-02-28 12:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 12:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 12:20:01] === Watchdog Check ===
+[2026-02-28 12:20:01] ✓ Extraction complete
+[2026-02-28 12:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 12:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 12:30:01] === Watchdog Check ===
+[2026-02-28 12:30:01] ✓ Extraction complete
+[2026-02-28 12:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 12:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 12:40:01] === Watchdog Check ===
+[2026-02-28 12:40:01] ✓ Extraction complete
+[2026-02-28 12:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 12:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 12:50:01] === Watchdog Check ===
+[2026-02-28 12:50:01] ✓ Extraction complete
+[2026-02-28 12:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 12:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 13:00:01] === Watchdog Check ===
+[2026-02-28 13:00:01] ✓ Extraction complete
+[2026-02-28 13:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 13:00:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 13:10:01] === Watchdog Check ===
+[2026-02-28 13:10:01] ✓ Extraction complete
+[2026-02-28 13:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 13:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 13:20:01] === Watchdog Check ===
+[2026-02-28 13:20:01] ✓ Extraction complete
+[2026-02-28 13:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 13:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 13:30:01] === Watchdog Check ===
+[2026-02-28 13:30:01] ✓ Extraction complete
+[2026-02-28 13:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 13:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 13:40:01] === Watchdog Check ===
+[2026-02-28 13:40:01] ✓ Extraction complete
+[2026-02-28 13:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 13:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 13:50:01] === Watchdog Check ===
+[2026-02-28 13:50:01] ✓ Extraction complete
+[2026-02-28 13:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 13:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 14:00:01] === Watchdog Check ===
+[2026-02-28 14:00:01] ✓ Extraction complete
+[2026-02-28 14:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 14:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 14:10:01] === Watchdog Check ===
+[2026-02-28 14:10:01] ✓ Extraction complete
+[2026-02-28 14:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 14:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 14:20:01] === Watchdog Check ===
+[2026-02-28 14:20:01] ✓ Extraction complete
+[2026-02-28 14:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 14:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 14:30:01] === Watchdog Check ===
+[2026-02-28 14:30:01] ✓ Extraction complete
+[2026-02-28 14:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 14:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 14:40:01] === Watchdog Check ===
+[2026-02-28 14:40:01] ✓ Extraction complete
+[2026-02-28 14:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 14:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 14:50:01] === Watchdog Check ===
+[2026-02-28 14:50:01] ✓ Extraction complete
+[2026-02-28 14:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 14:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 15:00:01] === Watchdog Check ===
+[2026-02-28 15:00:01] ✓ Extraction complete
+[2026-02-28 15:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 15:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 15:10:01] === Watchdog Check ===
+[2026-02-28 15:10:01] ✓ Extraction complete
+[2026-02-28 15:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 15:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 15:20:01] === Watchdog Check ===
+[2026-02-28 15:20:01] ✓ Extraction complete
+[2026-02-28 15:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 15:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 15:30:01] === Watchdog Check ===
+[2026-02-28 15:30:01] ✓ Extraction complete
+[2026-02-28 15:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 15:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 15:40:01] === Watchdog Check ===
+[2026-02-28 15:40:01] ✓ Extraction complete
+[2026-02-28 15:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 15:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 15:50:01] === Watchdog Check ===
+[2026-02-28 15:50:01] ✓ Extraction complete
+[2026-02-28 15:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 15:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 16:00:01] === Watchdog Check ===
+[2026-02-28 16:00:01] ✓ Extraction complete
+[2026-02-28 16:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 16:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 16:10:01] === Watchdog Check ===
+[2026-02-28 16:10:01] ✓ Extraction complete
+[2026-02-28 16:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 16:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 16:20:01] === Watchdog Check ===
+[2026-02-28 16:20:01] ✓ Extraction complete
+[2026-02-28 16:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 16:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 16:30:01] === Watchdog Check ===
+[2026-02-28 16:30:01] ✓ Extraction complete
+[2026-02-28 16:30:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 16:30:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 16:40:01] === Watchdog Check ===
+[2026-02-28 16:40:01] ✓ Extraction complete
+[2026-02-28 16:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 16:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 16:50:01] === Watchdog Check ===
+[2026-02-28 16:50:01] ✓ Extraction complete
+[2026-02-28 16:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 16:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 17:00:01] === Watchdog Check ===
+[2026-02-28 17:00:01] ✓ Extraction complete
+[2026-02-28 17:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 17:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 17:10:01] === Watchdog Check ===
+[2026-02-28 17:10:01] ✓ Extraction complete
+[2026-02-28 17:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 17:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 17:20:01] === Watchdog Check ===
+[2026-02-28 17:20:01] ✓ Extraction complete
+[2026-02-28 17:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 17:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 17:30:01] === Watchdog Check ===
+[2026-02-28 17:30:01] ✓ Extraction complete
+[2026-02-28 17:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 17:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 17:40:01] === Watchdog Check ===
+[2026-02-28 17:40:01] ✓ Extraction complete
+[2026-02-28 17:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 17:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 17:50:01] === Watchdog Check ===
+[2026-02-28 17:50:01] ✓ Extraction complete
+[2026-02-28 17:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 17:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 18:00:01] === Watchdog Check ===
+[2026-02-28 18:00:01] ✓ Extraction complete
+[2026-02-28 18:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 18:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 18:10:01] === Watchdog Check ===
+[2026-02-28 18:10:01] ✓ Extraction complete
+[2026-02-28 18:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 18:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 18:20:01] === Watchdog Check ===
+[2026-02-28 18:20:01] ✓ Extraction complete
+[2026-02-28 18:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 18:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 18:30:01] === Watchdog Check ===
+[2026-02-28 18:30:01] ✓ Extraction complete
+[2026-02-28 18:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 18:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 18:40:01] === Watchdog Check ===
+[2026-02-28 18:40:01] ✓ Extraction complete
+[2026-02-28 18:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 18:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 18:50:01] === Watchdog Check ===
+[2026-02-28 18:50:01] ✓ Extraction complete
+[2026-02-28 18:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 18:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 19:00:01] === Watchdog Check ===
+[2026-02-28 19:00:01] ✓ Extraction complete
+[2026-02-28 19:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 19:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 19:10:01] === Watchdog Check ===
+[2026-02-28 19:10:01] ✓ Extraction complete
+[2026-02-28 19:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 19:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 19:20:01] === Watchdog Check ===
+[2026-02-28 19:20:01] ✓ Extraction complete
+[2026-02-28 19:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 19:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 19:30:01] === Watchdog Check ===
+[2026-02-28 19:30:01] ✓ Extraction complete
+[2026-02-28 19:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 19:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 19:40:01] === Watchdog Check ===
+[2026-02-28 19:40:01] ✓ Extraction complete
+[2026-02-28 19:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 19:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 19:50:01] === Watchdog Check ===
+[2026-02-28 19:50:01] ✓ Extraction complete
+[2026-02-28 19:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 19:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 20:00:01] === Watchdog Check ===
+[2026-02-28 20:00:02] ✓ Extraction complete
+[2026-02-28 20:00:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 20:00:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 20:10:01] === Watchdog Check ===
+[2026-02-28 20:10:01] ✓ Extraction complete
+[2026-02-28 20:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 20:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 20:20:01] === Watchdog Check ===
+[2026-02-28 20:20:01] ✓ Extraction complete
+[2026-02-28 20:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 20:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 20:30:01] === Watchdog Check ===
+[2026-02-28 20:30:01] ✓ Extraction complete
+[2026-02-28 20:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 20:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 20:40:01] === Watchdog Check ===
+[2026-02-28 20:40:01] ✓ Extraction complete
+[2026-02-28 20:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 20:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 20:50:01] === Watchdog Check ===
+[2026-02-28 20:50:01] ✓ Extraction complete
+[2026-02-28 20:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 20:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 21:00:01] === Watchdog Check ===
+[2026-02-28 21:00:01] ✓ Extraction complete
+[2026-02-28 21:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 21:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 21:10:01] === Watchdog Check ===
+[2026-02-28 21:10:01] ✓ Extraction complete
+[2026-02-28 21:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 21:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 21:20:01] === Watchdog Check ===
+[2026-02-28 21:20:01] ✓ Extraction complete
+[2026-02-28 21:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 21:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 21:30:01] === Watchdog Check ===
+[2026-02-28 21:30:01] ✓ Extraction complete
+[2026-02-28 21:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 21:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 21:40:01] === Watchdog Check ===
+[2026-02-28 21:40:01] ✓ Extraction complete
+[2026-02-28 21:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 21:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 21:50:01] === Watchdog Check ===
+[2026-02-28 21:50:01] ✓ Extraction complete
+[2026-02-28 21:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 21:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 22:00:01] === Watchdog Check ===
+[2026-02-28 22:00:01] ✓ Extraction complete
+[2026-02-28 22:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 22:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 22:10:01] === Watchdog Check ===
+[2026-02-28 22:10:01] ✓ Extraction complete
+[2026-02-28 22:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 22:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 22:20:01] === Watchdog Check ===
+[2026-02-28 22:20:01] ✓ Extraction complete
+[2026-02-28 22:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 22:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 22:30:01] === Watchdog Check ===
+[2026-02-28 22:30:01] ✓ Extraction complete
+[2026-02-28 22:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 22:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 22:40:01] === Watchdog Check ===
+[2026-02-28 22:40:01] ✓ Extraction complete
+[2026-02-28 22:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 22:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 22:50:01] === Watchdog Check ===
+[2026-02-28 22:50:01] ✓ Extraction complete
+[2026-02-28 22:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 22:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 23:00:01] === Watchdog Check ===
+[2026-02-28 23:00:01] ✓ Extraction complete
+[2026-02-28 23:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 23:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 23:10:01] === Watchdog Check ===
+[2026-02-28 23:10:01] ✓ Extraction complete
+[2026-02-28 23:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 23:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 23:20:01] === Watchdog Check ===
+[2026-02-28 23:20:01] ✓ Extraction complete
+[2026-02-28 23:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 23:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 23:30:02] === Watchdog Check ===
+[2026-02-28 23:30:02] ✓ Extraction complete
+[2026-02-28 23:30:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 23:30:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 23:40:01] === Watchdog Check ===
+[2026-02-28 23:40:01] ✓ Extraction complete
+[2026-02-28 23:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 23:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-02-28 23:50:01] === Watchdog Check ===
+[2026-02-28 23:50:01] ✓ Extraction complete
+[2026-02-28 23:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-02-28 23:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 00:00:01] === Watchdog Check ===
+[2026-03-01 00:00:01] ✓ Extraction complete
+[2026-03-01 00:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 00:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 00:10:01] === Watchdog Check ===
+[2026-03-01 00:10:01] ✓ Extraction complete
+[2026-03-01 00:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 00:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 00:20:01] === Watchdog Check ===
+[2026-03-01 00:20:01] ✓ Extraction complete
+[2026-03-01 00:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 00:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 00:30:01] === Watchdog Check ===
+[2026-03-01 00:30:01] ✓ Extraction complete
+[2026-03-01 00:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 00:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 00:40:01] === Watchdog Check ===
+[2026-03-01 00:40:01] ✓ Extraction complete
+[2026-03-01 00:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 00:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 00:50:01] === Watchdog Check ===
+[2026-03-01 00:50:01] ✓ Extraction complete
+[2026-03-01 00:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 00:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 01:00:01] === Watchdog Check ===
+[2026-03-01 01:00:01] ✓ Extraction complete
+[2026-03-01 01:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 01:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 01:10:01] === Watchdog Check ===
+[2026-03-01 01:10:01] ✓ Extraction complete
+[2026-03-01 01:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 01:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 01:20:01] === Watchdog Check ===
+[2026-03-01 01:20:01] ✓ Extraction complete
+[2026-03-01 01:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 01:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 01:30:01] === Watchdog Check ===
+[2026-03-01 01:30:01] ✓ Extraction complete
+[2026-03-01 01:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 01:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 01:40:01] === Watchdog Check ===
+[2026-03-01 01:40:01] ✓ Extraction complete
+[2026-03-01 01:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 01:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 01:50:01] === Watchdog Check ===
+[2026-03-01 01:50:01] ✓ Extraction complete
+[2026-03-01 01:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 01:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 02:00:01] === Watchdog Check ===
+[2026-03-01 02:00:01] ✓ Extraction complete
+[2026-03-01 02:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 02:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 02:10:01] === Watchdog Check ===
+[2026-03-01 02:10:01] ✓ Extraction complete
+[2026-03-01 02:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 02:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 02:20:01] === Watchdog Check ===
+[2026-03-01 02:20:01] ✓ Extraction complete
+[2026-03-01 02:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 02:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 02:30:01] === Watchdog Check ===
+[2026-03-01 02:30:01] ✓ Extraction complete
+[2026-03-01 02:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 02:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 02:40:01] === Watchdog Check ===
+[2026-03-01 02:40:01] ✓ Extraction complete
+[2026-03-01 02:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 02:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 02:50:01] === Watchdog Check ===
+[2026-03-01 02:50:01] ✓ Extraction complete
+[2026-03-01 02:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 02:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 03:00:02] === Watchdog Check ===
+[2026-03-01 03:00:02] ✓ Extraction complete
+[2026-03-01 03:00:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 03:00:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 03:10:01] === Watchdog Check ===
+[2026-03-01 03:10:01] ✓ Extraction complete
+[2026-03-01 03:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 03:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 03:20:01] === Watchdog Check ===
+[2026-03-01 03:20:01] ✓ Extraction complete
+[2026-03-01 03:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 03:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 03:30:01] === Watchdog Check ===
+[2026-03-01 03:30:01] ✓ Extraction complete
+[2026-03-01 03:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 03:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 03:40:01] === Watchdog Check ===
+[2026-03-01 03:40:01] ✓ Extraction complete
+[2026-03-01 03:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 03:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 03:50:01] === Watchdog Check ===
+[2026-03-01 03:50:01] ✓ Extraction complete
+[2026-03-01 03:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 03:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 04:00:01] === Watchdog Check ===
+[2026-03-01 04:00:01] ✓ Extraction complete
+[2026-03-01 04:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 04:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 04:10:01] === Watchdog Check ===
+[2026-03-01 04:10:01] ✓ Extraction complete
+[2026-03-01 04:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 04:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 04:20:01] === Watchdog Check ===
+[2026-03-01 04:20:01] ✓ Extraction complete
+[2026-03-01 04:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 04:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 04:30:01] === Watchdog Check ===
+[2026-03-01 04:30:01] ✓ Extraction complete
+[2026-03-01 04:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 04:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 04:40:01] === Watchdog Check ===
+[2026-03-01 04:40:01] ✓ Extraction complete
+[2026-03-01 04:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 04:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 04:50:01] === Watchdog Check ===
+[2026-03-01 04:50:01] ✓ Extraction complete
+[2026-03-01 04:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 04:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 05:00:01] === Watchdog Check ===
+[2026-03-01 05:00:01] ✓ Extraction complete
+[2026-03-01 05:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 05:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 05:10:01] === Watchdog Check ===
+[2026-03-01 05:10:01] ✓ Extraction complete
+[2026-03-01 05:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 05:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 05:20:01] === Watchdog Check ===
+[2026-03-01 05:20:01] ✓ Extraction complete
+[2026-03-01 05:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 05:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 05:30:01] === Watchdog Check ===
+[2026-03-01 05:30:01] ✓ Extraction complete
+[2026-03-01 05:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 05:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 05:40:01] === Watchdog Check ===
+[2026-03-01 05:40:01] ✓ Extraction complete
+[2026-03-01 05:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 05:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 05:50:01] === Watchdog Check ===
+[2026-03-01 05:50:01] ✓ Extraction complete
+[2026-03-01 05:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 05:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 06:00:01] === Watchdog Check ===
+[2026-03-01 06:00:01] ✓ Extraction complete
+[2026-03-01 06:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 06:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 06:10:01] === Watchdog Check ===
+[2026-03-01 06:10:01] ✓ Extraction complete
+[2026-03-01 06:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 06:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 06:20:01] === Watchdog Check ===
+[2026-03-01 06:20:01] ✓ Extraction complete
+[2026-03-01 06:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 06:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 06:30:02] === Watchdog Check ===
+[2026-03-01 06:30:02] ✓ Extraction complete
+[2026-03-01 06:30:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 06:30:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 06:40:01] === Watchdog Check ===
+[2026-03-01 06:40:01] ✓ Extraction complete
+[2026-03-01 06:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 06:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 06:50:01] === Watchdog Check ===
+[2026-03-01 06:50:01] ✓ Extraction complete
+[2026-03-01 06:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 06:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 07:00:01] === Watchdog Check ===
+[2026-03-01 07:00:01] ✓ Extraction complete
+[2026-03-01 07:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 07:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 07:10:01] === Watchdog Check ===
+[2026-03-01 07:10:01] ✓ Extraction complete
+[2026-03-01 07:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 07:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 07:20:01] === Watchdog Check ===
+[2026-03-01 07:20:01] ✓ Extraction complete
+[2026-03-01 07:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 07:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 07:30:01] === Watchdog Check ===
+[2026-03-01 07:30:01] ✓ Extraction complete
+[2026-03-01 07:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 07:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 07:40:01] === Watchdog Check ===
+[2026-03-01 07:40:01] ✓ Extraction complete
+[2026-03-01 07:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 07:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 07:50:01] === Watchdog Check ===
+[2026-03-01 07:50:01] ✓ Extraction complete
+[2026-03-01 07:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 07:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 08:00:01] === Watchdog Check ===
+[2026-03-01 08:00:01] ✓ Extraction complete
+[2026-03-01 08:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 08:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 08:10:01] === Watchdog Check ===
+[2026-03-01 08:10:01] ✓ Extraction complete
+[2026-03-01 08:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 08:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 08:20:01] === Watchdog Check ===
+[2026-03-01 08:20:01] ✓ Extraction complete
+[2026-03-01 08:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 08:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 08:30:01] === Watchdog Check ===
+[2026-03-01 08:30:01] ✓ Extraction complete
+[2026-03-01 08:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 08:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 08:40:01] === Watchdog Check ===
+[2026-03-01 08:40:01] ✓ Extraction complete
+[2026-03-01 08:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 08:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 08:50:01] === Watchdog Check ===
+[2026-03-01 08:50:01] ✓ Extraction complete
+[2026-03-01 08:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 08:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 09:00:01] === Watchdog Check ===
+[2026-03-01 09:00:01] ✓ Extraction complete
+[2026-03-01 09:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 09:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 09:10:01] === Watchdog Check ===
+[2026-03-01 09:10:01] ✓ Extraction complete
+[2026-03-01 09:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 09:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 09:20:01] === Watchdog Check ===
+[2026-03-01 09:20:01] ✓ Extraction complete
+[2026-03-01 09:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 09:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 09:30:01] === Watchdog Check ===
+[2026-03-01 09:30:01] ✓ Extraction complete
+[2026-03-01 09:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 09:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 09:40:01] === Watchdog Check ===
+[2026-03-01 09:40:01] ✓ Extraction complete
+[2026-03-01 09:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 09:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 09:50:01] === Watchdog Check ===
+[2026-03-01 09:50:01] ✓ Extraction complete
+[2026-03-01 09:50:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 09:50:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 10:00:01] === Watchdog Check ===
+[2026-03-01 10:00:01] ✓ Extraction complete
+[2026-03-01 10:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 10:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 10:10:01] === Watchdog Check ===
+[2026-03-01 10:10:01] ✓ Extraction complete
+[2026-03-01 10:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 10:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 10:20:01] === Watchdog Check ===
+[2026-03-01 10:20:01] ✓ Extraction complete
+[2026-03-01 10:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 10:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 10:30:01] === Watchdog Check ===
+[2026-03-01 10:30:01] ✓ Extraction complete
+[2026-03-01 10:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 10:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 10:40:01] === Watchdog Check ===
+[2026-03-01 10:40:01] ✓ Extraction complete
+[2026-03-01 10:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 10:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 10:50:01] === Watchdog Check ===
+[2026-03-01 10:50:01] ✓ Extraction complete
+[2026-03-01 10:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 10:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 11:00:01] === Watchdog Check ===
+[2026-03-01 11:00:01] ✓ Extraction complete
+[2026-03-01 11:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 11:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 11:10:01] === Watchdog Check ===
+[2026-03-01 11:10:01] ✓ Extraction complete
+[2026-03-01 11:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 11:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 11:20:01] === Watchdog Check ===
+[2026-03-01 11:20:01] ✓ Extraction complete
+[2026-03-01 11:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 11:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 11:30:01] === Watchdog Check ===
+[2026-03-01 11:30:01] ✓ Extraction complete
+[2026-03-01 11:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 11:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 11:40:01] === Watchdog Check ===
+[2026-03-01 11:40:01] ✓ Extraction complete
+[2026-03-01 11:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 11:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 11:50:01] === Watchdog Check ===
+[2026-03-01 11:50:01] ✓ Extraction complete
+[2026-03-01 11:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 11:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 12:00:01] === Watchdog Check ===
+[2026-03-01 12:00:01] ✓ Extraction complete
+[2026-03-01 12:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 12:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 12:10:01] === Watchdog Check ===
+[2026-03-01 12:10:01] ✓ Extraction complete
+[2026-03-01 12:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 12:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 12:20:01] === Watchdog Check ===
+[2026-03-01 12:20:01] ✓ Extraction complete
+[2026-03-01 12:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 12:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 12:30:01] === Watchdog Check ===
+[2026-03-01 12:30:01] ✓ Extraction complete
+[2026-03-01 12:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 12:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 12:40:01] === Watchdog Check ===
+[2026-03-01 12:40:01] ✓ Extraction complete
+[2026-03-01 12:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 12:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 12:50:01] === Watchdog Check ===
+[2026-03-01 12:50:01] ✓ Extraction complete
+[2026-03-01 12:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 12:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 13:00:01] === Watchdog Check ===
+[2026-03-01 13:00:01] ✓ Extraction complete
+[2026-03-01 13:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 13:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 13:10:01] === Watchdog Check ===
+[2026-03-01 13:10:01] ✓ Extraction complete
+[2026-03-01 13:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 13:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 13:20:01] === Watchdog Check ===
+[2026-03-01 13:20:01] ✓ Extraction complete
+[2026-03-01 13:20:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 13:20:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 13:30:01] === Watchdog Check ===
+[2026-03-01 13:30:01] ✓ Extraction complete
+[2026-03-01 13:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 13:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 13:40:01] === Watchdog Check ===
+[2026-03-01 13:40:01] ✓ Extraction complete
+[2026-03-01 13:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 13:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 13:50:01] === Watchdog Check ===
+[2026-03-01 13:50:01] ✓ Extraction complete
+[2026-03-01 13:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 13:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 14:00:01] === Watchdog Check ===
+[2026-03-01 14:00:01] ✓ Extraction complete
+[2026-03-01 14:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 14:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 14:10:01] === Watchdog Check ===
+[2026-03-01 14:10:01] ✓ Extraction complete
+[2026-03-01 14:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 14:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 14:20:01] === Watchdog Check ===
+[2026-03-01 14:20:01] ✓ Extraction complete
+[2026-03-01 14:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 14:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 14:30:01] === Watchdog Check ===
+[2026-03-01 14:30:01] ✓ Extraction complete
+[2026-03-01 14:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 14:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 14:40:01] === Watchdog Check ===
+[2026-03-01 14:40:01] ✓ Extraction complete
+[2026-03-01 14:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 14:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 14:50:01] === Watchdog Check ===
+[2026-03-01 14:50:01] ✓ Extraction complete
+[2026-03-01 14:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 14:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 15:00:01] === Watchdog Check ===
+[2026-03-01 15:00:01] ✓ Extraction complete
+[2026-03-01 15:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 15:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 15:10:01] === Watchdog Check ===
+[2026-03-01 15:10:01] ✓ Extraction complete
+[2026-03-01 15:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 15:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 15:20:01] === Watchdog Check ===
+[2026-03-01 15:20:01] ✓ Extraction complete
+[2026-03-01 15:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 15:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 15:30:01] === Watchdog Check ===
+[2026-03-01 15:30:01] ✓ Extraction complete
+[2026-03-01 15:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 15:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 15:40:01] === Watchdog Check ===
+[2026-03-01 15:40:01] ✓ Extraction complete
+[2026-03-01 15:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 15:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 15:50:01] === Watchdog Check ===
+[2026-03-01 15:50:01] ✓ Extraction complete
+[2026-03-01 15:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 15:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 16:00:01] === Watchdog Check ===
+[2026-03-01 16:00:01] ✓ Extraction complete
+[2026-03-01 16:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 16:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 16:10:01] === Watchdog Check ===
+[2026-03-01 16:10:01] ✓ Extraction complete
+[2026-03-01 16:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 16:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 16:20:01] === Watchdog Check ===
+[2026-03-01 16:20:01] ✓ Extraction complete
+[2026-03-01 16:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 16:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 16:30:01] === Watchdog Check ===
+[2026-03-01 16:30:01] ✓ Extraction complete
+[2026-03-01 16:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 16:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 16:40:01] === Watchdog Check ===
+[2026-03-01 16:40:01] ✓ Extraction complete
+[2026-03-01 16:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 16:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 16:50:01] === Watchdog Check ===
+[2026-03-01 16:50:01] ✓ Extraction complete
+[2026-03-01 16:50:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 16:50:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 17:00:01] === Watchdog Check ===
+[2026-03-01 17:00:01] ✓ Extraction complete
+[2026-03-01 17:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 17:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 17:10:01] === Watchdog Check ===
+[2026-03-01 17:10:01] ✓ Extraction complete
+[2026-03-01 17:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 17:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 17:20:01] === Watchdog Check ===
+[2026-03-01 17:20:01] ✓ Extraction complete
+[2026-03-01 17:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 17:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 17:30:01] === Watchdog Check ===
+[2026-03-01 17:30:01] ✓ Extraction complete
+[2026-03-01 17:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 17:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 17:40:01] === Watchdog Check ===
+[2026-03-01 17:40:01] ✓ Extraction complete
+[2026-03-01 17:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 17:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 17:50:01] === Watchdog Check ===
+[2026-03-01 17:50:01] ✓ Extraction complete
+[2026-03-01 17:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 17:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 18:00:01] === Watchdog Check ===
+[2026-03-01 18:00:01] ✓ Extraction complete
+[2026-03-01 18:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 18:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 18:10:01] === Watchdog Check ===
+[2026-03-01 18:10:01] ✓ Extraction complete
+[2026-03-01 18:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 18:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 18:20:01] === Watchdog Check ===
+[2026-03-01 18:20:01] ✓ Extraction complete
+[2026-03-01 18:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 18:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 18:30:01] === Watchdog Check ===
+[2026-03-01 18:30:01] ✓ Extraction complete
+[2026-03-01 18:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 18:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 18:40:01] === Watchdog Check ===
+[2026-03-01 18:40:01] ✓ Extraction complete
+[2026-03-01 18:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 18:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 18:50:01] === Watchdog Check ===
+[2026-03-01 18:50:01] ✓ Extraction complete
+[2026-03-01 18:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 18:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 19:00:01] === Watchdog Check ===
+[2026-03-01 19:00:01] ✓ Extraction complete
+[2026-03-01 19:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 19:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 19:10:01] === Watchdog Check ===
+[2026-03-01 19:10:01] ✓ Extraction complete
+[2026-03-01 19:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 19:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 19:20:01] === Watchdog Check ===
+[2026-03-01 19:20:01] ✓ Extraction complete
+[2026-03-01 19:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 19:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 19:30:01] === Watchdog Check ===
+[2026-03-01 19:30:01] ✓ Extraction complete
+[2026-03-01 19:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 19:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 19:40:01] === Watchdog Check ===
+[2026-03-01 19:40:01] ✓ Extraction complete
+[2026-03-01 19:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 19:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 19:50:01] === Watchdog Check ===
+[2026-03-01 19:50:01] ✓ Extraction complete
+[2026-03-01 19:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 19:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 20:00:01] === Watchdog Check ===
+[2026-03-01 20:00:01] ✓ Extraction complete
+[2026-03-01 20:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 20:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 20:10:01] === Watchdog Check ===
+[2026-03-01 20:10:01] ✓ Extraction complete
+[2026-03-01 20:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 20:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 20:20:01] === Watchdog Check ===
+[2026-03-01 20:20:01] ✓ Extraction complete
+[2026-03-01 20:20:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 20:20:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 20:30:01] === Watchdog Check ===
+[2026-03-01 20:30:01] ✓ Extraction complete
+[2026-03-01 20:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 20:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 20:40:01] === Watchdog Check ===
+[2026-03-01 20:40:01] ✓ Extraction complete
+[2026-03-01 20:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 20:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 20:50:01] === Watchdog Check ===
+[2026-03-01 20:50:01] ✓ Extraction complete
+[2026-03-01 20:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 20:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 21:00:01] === Watchdog Check ===
+[2026-03-01 21:00:01] ✓ Extraction complete
+[2026-03-01 21:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 21:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 21:10:01] === Watchdog Check ===
+[2026-03-01 21:10:01] ✓ Extraction complete
+[2026-03-01 21:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 21:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 21:20:01] === Watchdog Check ===
+[2026-03-01 21:20:01] ✓ Extraction complete
+[2026-03-01 21:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 21:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 21:30:01] === Watchdog Check ===
+[2026-03-01 21:30:01] ✓ Extraction complete
+[2026-03-01 21:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 21:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 21:40:01] === Watchdog Check ===
+[2026-03-01 21:40:01] ✓ Extraction complete
+[2026-03-01 21:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 21:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 21:50:01] === Watchdog Check ===
+[2026-03-01 21:50:01] ✓ Extraction complete
+[2026-03-01 21:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 21:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 22:00:01] === Watchdog Check ===
+[2026-03-01 22:00:01] ✓ Extraction complete
+[2026-03-01 22:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 22:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 22:10:01] === Watchdog Check ===
+[2026-03-01 22:10:01] ✓ Extraction complete
+[2026-03-01 22:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 22:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 22:20:01] === Watchdog Check ===
+[2026-03-01 22:20:01] ✓ Extraction complete
+[2026-03-01 22:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 22:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 22:30:01] === Watchdog Check ===
+[2026-03-01 22:30:01] ✓ Extraction complete
+[2026-03-01 22:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 22:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 22:40:01] === Watchdog Check ===
+[2026-03-01 22:40:01] ✓ Extraction complete
+[2026-03-01 22:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 22:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 22:50:01] === Watchdog Check ===
+[2026-03-01 22:50:01] ✓ Extraction complete
+[2026-03-01 22:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 22:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 23:00:01] === Watchdog Check ===
+[2026-03-01 23:00:01] ✓ Extraction complete
+[2026-03-01 23:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 23:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 23:10:01] === Watchdog Check ===
+[2026-03-01 23:10:01] ✓ Extraction complete
+[2026-03-01 23:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 23:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 23:20:01] === Watchdog Check ===
+[2026-03-01 23:20:01] ✓ Extraction complete
+[2026-03-01 23:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 23:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 23:30:01] === Watchdog Check ===
+[2026-03-01 23:30:01] ✓ Extraction complete
+[2026-03-01 23:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 23:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 23:40:01] === Watchdog Check ===
+[2026-03-01 23:40:01] ✓ Extraction complete
+[2026-03-01 23:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 23:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-01 23:50:01] === Watchdog Check ===
+[2026-03-01 23:50:01] ✓ Extraction complete
+[2026-03-01 23:50:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-01 23:50:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 00:00:01] === Watchdog Check ===
+[2026-03-02 00:00:01] ✓ Extraction complete
+[2026-03-02 00:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 00:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 00:10:01] === Watchdog Check ===
+[2026-03-02 00:10:01] ✓ Extraction complete
+[2026-03-02 00:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 00:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 00:20:01] === Watchdog Check ===
+[2026-03-02 00:20:01] ✓ Extraction complete
+[2026-03-02 00:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 00:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 00:30:01] === Watchdog Check ===
+[2026-03-02 00:30:01] ✓ Extraction complete
+[2026-03-02 00:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 00:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 00:40:01] === Watchdog Check ===
+[2026-03-02 00:40:01] ✓ Extraction complete
+[2026-03-02 00:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 00:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 00:50:01] === Watchdog Check ===
+[2026-03-02 00:50:01] ✓ Extraction complete
+[2026-03-02 00:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 00:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 01:00:01] === Watchdog Check ===
+[2026-03-02 01:00:01] ✓ Extraction complete
+[2026-03-02 01:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 01:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 01:10:01] === Watchdog Check ===
+[2026-03-02 01:10:01] ✓ Extraction complete
+[2026-03-02 01:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 01:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 01:20:01] === Watchdog Check ===
+[2026-03-02 01:20:01] ✓ Extraction complete
+[2026-03-02 01:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 01:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 01:30:01] === Watchdog Check ===
+[2026-03-02 01:30:01] ✓ Extraction complete
+[2026-03-02 01:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 01:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 01:40:01] === Watchdog Check ===
+[2026-03-02 01:40:01] ✓ Extraction complete
+[2026-03-02 01:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 01:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 01:50:01] === Watchdog Check ===
+[2026-03-02 01:50:01] ✓ Extraction complete
+[2026-03-02 01:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 01:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 02:00:01] === Watchdog Check ===
+[2026-03-02 02:00:01] ✓ Extraction complete
+[2026-03-02 02:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 02:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 02:10:01] === Watchdog Check ===
+[2026-03-02 02:10:01] ✓ Extraction complete
+[2026-03-02 02:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 02:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 02:20:01] === Watchdog Check ===
+[2026-03-02 02:20:01] ✓ Extraction complete
+[2026-03-02 02:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 02:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 02:30:01] === Watchdog Check ===
+[2026-03-02 02:30:01] ✓ Extraction complete
+[2026-03-02 02:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 02:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 02:40:01] === Watchdog Check ===
+[2026-03-02 02:40:01] ✓ Extraction complete
+[2026-03-02 02:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 02:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 02:50:01] === Watchdog Check ===
+[2026-03-02 02:50:01] ✓ Extraction complete
+[2026-03-02 02:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 02:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 03:00:01] === Watchdog Check ===
+[2026-03-02 03:00:01] ✓ Extraction complete
+[2026-03-02 03:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 03:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 03:10:01] === Watchdog Check ===
+[2026-03-02 03:10:01] ✓ Extraction complete
+[2026-03-02 03:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 03:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 03:20:01] === Watchdog Check ===
+[2026-03-02 03:20:01] ✓ Extraction complete
+[2026-03-02 03:20:02] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 03:20:02]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 03:30:01] === Watchdog Check ===
+[2026-03-02 03:30:01] ✓ Extraction complete
+[2026-03-02 03:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 03:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 03:40:01] === Watchdog Check ===
+[2026-03-02 03:40:01] ✓ Extraction complete
+[2026-03-02 03:40:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 03:40:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 03:50:01] === Watchdog Check ===
+[2026-03-02 03:50:01] ✓ Extraction complete
+[2026-03-02 03:50:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 03:50:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 04:00:01] === Watchdog Check ===
+[2026-03-02 04:00:01] ✓ Extraction complete
+[2026-03-02 04:00:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 04:00:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 04:10:01] === Watchdog Check ===
+[2026-03-02 04:10:01] ✓ Extraction complete
+[2026-03-02 04:10:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 04:10:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 04:20:01] === Watchdog Check ===
+[2026-03-02 04:20:01] ✓ Extraction complete
+[2026-03-02 04:20:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
+[2026-03-02 04:20:01]    Remaining 14 likely failed permanently (corrupt TNG data)

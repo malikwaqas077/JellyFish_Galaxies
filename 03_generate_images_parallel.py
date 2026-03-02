@@ -28,10 +28,10 @@ IMAGE_LOG   = os.path.join(DATA_DIR, "image_log.csv")
 
 APERTURE_KPC = 200.0
 TOP_SKIP_FRAC = 0.09
-REQUEST_DELAY = 0.1  # Reduced delay for parallel processing
+REQUEST_DELAY = 0.3  # Increased delay to avoid API rate limits
 
-# Number of parallel workers
-NUM_WORKERS = 8
+# Number of parallel workers (reduced to avoid overwhelming API)
+NUM_WORKERS = 4
 
 
 def _vis_params(size_factor):
@@ -46,17 +46,26 @@ def _vis_params(size_factor):
     }
 
 
-def download_vis_png(subhalo_id, size_factor):
+def download_vis_png(subhalo_id, size_factor, retries=3):
     """Call the TNG vis.png endpoint and return a PIL Image, or None on failure."""
     url = (f"https://www.tng-project.org/api/{SIMULATION}"
            f"/snapshots/{SNAPSHOT}/subhalos/{subhalo_id}/vis.png")
-    r = get(url, params=_vis_params(size_factor))
-    if r is None:
-        return None
-    try:
-        return Image.open(io.BytesIO(r.content)).convert("RGB")
-    except Exception:
-        return None
+    
+    for attempt in range(retries):
+        try:
+            r = get(url, params=_vis_params(size_factor))
+            if r is None:
+                if attempt < retries - 1:
+                    time.sleep(2 ** attempt)  # Exponential backoff: 1s, 2s, 4s
+                    continue
+                return None
+            return Image.open(io.BytesIO(r.content)).convert("RGB")
+        except Exception:
+            if attempt < retries - 1:
+                time.sleep(2 ** attempt)
+                continue
+            return None
+    return None
 
 
 def _detect_plot_bounds(arr):
@@ -184,7 +193,9 @@ def generate_images():
     if os.path.exists(IMAGE_LOG):
         with open(IMAGE_LOG, "r") as f:
             for r in csv.DictReader(f):
-                already_done.add(r["subhalo_id"])
+                # Only skip successfully downloaded images, retry failures
+                if r.get("image_path") and r.get("error") == "":
+                    already_done.add(r["subhalo_id"])
 
     log_fields = [
         "subhalo_id", "grnr", "axis", "image_path",

@@ -1,0 +1,30 @@
+Downloading vis.png images for 774 galaxies ...
+  Fixed aperture: 200.0 kpc half-width (dynamic rViral factor per galaxy)
+  Already done: 533, will skip
+  [1/774] sub=4 grnr=0  size=0.0910 requesting vis.png ... OK  sig=1.000  DR=0.957  -> halo000000_sub0000004_z.png
+  [154/774] sub=1064 grnr=0  size=0.0910 requesting vis.png ... OK  sig=1.000  DR=0.596  -> halo000000_sub0001064_z.png
+  [535/774] sub=33964 grnr=73  size=0.7313 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000073_sub0033964_z.png
+  [537/774] sub=33966 grnr=73  size=0.7313 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000073_sub0033966_z.png
+  [538/774] sub=33977 grnr=73  size=0.7313 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000073_sub0033977_z.png
+  [539/774] sub=34007 grnr=74  size=0.7174 requesting vis.png ... OK  sig=1.000  DR=0.599  -> halo000074_sub0034007_z.png
+  [540/774] sub=34008 grnr=74  size=0.7174 requesting vis.png ... OK  sig=1.000  DR=0.597  -> halo000074_sub0034008_z.png
+  [541/774] sub=34036 grnr=75  size=0.6585 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000075_sub0034036_z.png
+  [542/774] sub=34037 grnr=75  size=0.6585 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000075_sub0034037_z.png
+  [543/774] sub=34038 grnr=75  size=0.6585 requesting vis.png ... OK  sig=1.000  DR=0.617  -> halo000075_sub0034038_z.png
+  [544/774] sub=34039 grnr=75  size=0.6585 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000075_sub0034039_z.png
+  [545/774] sub=34040 grnr=75  size=0.6585 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000075_sub0034040_z.png
+  [546/774] sub=34041 grnr=75  size=0.6585 requesting vis.png ... OK  sig=1.000  DR=0.599  -> halo000075_sub0034041_z.png
+  [547/774] sub=34072 grnr=76  size=0.7837 requesting vis.png ... OK  sig=1.000  DR=0.616  -> halo000076_sub0034072_z.png
+  [548/774] sub=34073 grnr=76  size=0.7837 requesting vis.png ... OK  sig=1.000  DR=0.590  -> halo000076_sub0034073_z.png
+  [549/774] sub=34074 grnr=76  size=0.7837 requesting vis.png ... OK  sig=1.000  DR=0.597  -> halo000076_sub0034074_z.png
+  [550/774] sub=34075 grnr=76  size=0.7837 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000076_sub0034075_z.png
+  [551/774] sub=34108 grnr=77  size=0.7424 requesting vis.png ... OK  sig=1.000  DR=0.599  -> halo000077_sub0034108_z.png
+  [552/774] sub=34109 grnr=77  size=0.7424 requesting vis.png ... OK  sig=1.000  DR=0.613  -> halo000077_sub0034109_z.png
+  [553/774] sub=34110 grnr=77  size=0.7424 requesting vis.png ... FAILED
+    requests.exceptions.HTTPError: 504 Server Error: Gateway Time-out for url: https://data-eu.tng-project.org/vis/subhalo/TNG-Cluster/99/34110/png/?partType=gas&partField=dens&method=sphMap_subhalo&size=0.742390&sizeType=rViral&depthFac=1&token=ccbaf359631177a7d755
+  [554/774] sub=34111 grnr=77  size=0.7424 requesting vis.png ... FAILED
+    requests.exceptions.HTTPError: 504 Server Error: Gateway Time-out for url: https://data-eu.tng-project.org/vis/subhalo/TNG-Cluster/99/34111/png/?partType=gas&partField=dens&method=sphMap_subhalo&size=0.742390&sizeType=rViral&depthFac=1&token=02d4ce13d331448667db
+  [555/774] sub=34129 grnr=78  size=0.8460 requesting vis.png ... OK  sig=1.000  DR=0.610  -> halo000078_sub0034129_z.png
+  [556/774] sub=34176 grnr=79  size=0.8386 requesting vis.png ... OK  sig=1.000  DR=0.621  -> halo000079_sub0034176_z.png
+  [557/774] sub=34177 grnr=79  size=0.8386 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000079_sub0034177_z.png
+  [558/774] sub=34178 grnr=79  size=0.8386 requesting vis.png ... 

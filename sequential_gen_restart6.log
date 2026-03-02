@@ -1,0 +1,27 @@
+Downloading vis.png images for 774 galaxies ...
+  Fixed aperture: 200.0 kpc half-width (dynamic rViral factor per galaxy)
+  Already done: 623, will skip
+  [624/774] sub=34764 grnr=99  size=0.8432 requesting vis.png ... OK  sig=1.000  DR=0.599  -> halo000099_sub0034764_z.png
+  [625/774] sub=34766 grnr=99  size=0.8432 requesting vis.png ... OK  sig=1.000  DR=0.616  -> halo000099_sub0034766_z.png
+  [626/774] sub=34767 grnr=99  size=0.8432 requesting vis.png ... OK  sig=1.000  DR=0.613  -> halo000099_sub0034767_z.png
+  [627/774] sub=34771 grnr=99  size=0.8432 requesting vis.png ... OK  sig=1.000  DR=0.614  -> halo000099_sub0034771_z.png
+  [628/774] sub=34772 grnr=99  size=0.8432 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000099_sub0034772_z.png
+  [629/774] sub=34807 grnr=100  size=0.7994 requesting vis.png ... OK  sig=1.000  DR=0.597  -> halo000100_sub0034807_z.png
+  [630/774] sub=34808 grnr=100  size=0.7994 requesting vis.png ... OK  sig=1.000  DR=0.597  -> halo000100_sub0034808_z.png
+  [631/774] sub=34810 grnr=100  size=0.7994 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000100_sub0034810_z.png
+  [632/774] sub=34811 grnr=100  size=0.7994 requesting vis.png ... OK  sig=1.000  DR=0.599  -> halo000100_sub0034811_z.png
+  [633/774] sub=34815 grnr=100  size=0.7994 requesting vis.png ... OK  sig=1.000  DR=0.597  -> halo000100_sub0034815_z.png
+  [634/774] sub=34844 grnr=101  size=0.7602 requesting vis.png ... OK  sig=1.000  DR=0.614  -> halo000101_sub0034844_z.png
+  [635/774] sub=34885 grnr=103  size=0.8006 requesting vis.png ... OK  sig=1.000  DR=0.597  -> halo000103_sub0034885_z.png
+  [636/774] sub=34886 grnr=103  size=0.8006 requesting vis.png ... OK  sig=1.000  DR=0.597  -> halo000103_sub0034886_z.png
+  [637/774] sub=34887 grnr=103  size=0.8006 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000103_sub0034887_z.png
+  [638/774] sub=34890 grnr=103  size=0.8006 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000103_sub0034890_z.png
+  [639/774] sub=34913 grnr=104  size=0.7752 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000104_sub0034913_z.png
+  [640/774] sub=34914 grnr=104  size=0.7752 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000104_sub0034914_z.png
+  [641/774] sub=34931 grnr=104  size=0.7752 requesting vis.png ... OK  sig=1.000  DR=0.950  -> halo000104_sub0034931_z.png
+  [642/774] sub=34945 grnr=105  size=0.8493 requesting vis.png ... OK  sig=1.000  DR=0.599  -> halo000105_sub0034945_z.png
+  [643/774] sub=34967 grnr=106  size=0.8123 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000106_sub0034967_z.png
+  [644/774] sub=35002 grnr=108  size=0.8807 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000108_sub0035002_z.png
+  [645/774] sub=35007 grnr=108  size=0.8807 requesting vis.png ... OK  sig=1.000  DR=0.932  -> halo000108_sub0035007_z.png
+  [646/774] sub=35053 grnr=110  size=0.7987 requesting vis.png ... OK  sig=1.000  DR=0.616  -> halo000110_sub0035053_z.png
+  [647/774] sub=35054 grnr=110  size=0.7987 requesting vis.png ... 

@@ -25,8 +25,8 @@ OUTPUT_FILE = os.path.join(DATA_DIR, "clusters.csv")
 
 # proxy threshold: BCG total mass > 10^12.7 M_sun ~ 5e12 M_sun
 # EXTREMELY LOW to capture ALL possible groups/clusters for 1000+ images
-BCG_MASS_LOG_MIN = 12.7
-MAX_BCG_FETCH    = 5000     # Allow ALL clusters in TNG-Cluster
+BCG_MASS_LOG_MIN = 12.0     # ULTRA-LOW for 2000+ images! (includes groups)
+MAX_BCG_FETCH    = 10000    # Process ALL clusters in TNG-Cluster (352 total)
 
 
 def fetch_bcg_details(bcg_summary):

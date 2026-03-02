@@ -1,0 +1,31 @@
+Downloading vis.png images for 774 galaxies ...
+  Fixed aperture: 200.0 kpc half-width
+  Already done: 752, will skip
+  Using 8 parallel workers for faster processing
+  [1/22] sub=764 grnr=0  FAILED
+  [2/22] sub=23255 grnr=1  FAILED
+  [3/22] sub=1047 grnr=0  FAILED
+  [4/22] sub=1445 grnr=0  FAILED
+  [5/22] sub=23243 grnr=1  FAILED
+  [6/22] sub=25763 grnr=3  FAILED
+  [7/22] sub=24690 grnr=2  FAILED
+  [8/22] sub=23313 grnr=1  FAILED
+  [9/22] sub=35056 grnr=110  OK  sig=1.000  DR=0.599  -> halo000110_sub0035056_z.png
+  [10/22] sub=25803 grnr=3  FAILED
+  [11/22] sub=25801 grnr=3  FAILED
+  [12/22] sub=25793 grnr=3  FAILED
+  [13/22] sub=28070 grnr=7  FAILED
+  [14/22] sub=27537 grnr=6  FAILED
+  [15/22] sub=29282 grnr=11  FAILED
+  [16/22] sub=35208 grnr=116  OK  sig=1.000  DR=0.614  -> halo000116_sub0035208_z.png
+  [17/22] sub=35133 grnr=113  OK  sig=1.000  DR=0.597  -> halo000113_sub0035133_z.png
+  [18/22] sub=35195 grnr=115  OK  sig=1.000  DR=0.610  -> halo000115_sub0035195_z.png
+  [19/22] sub=35134 grnr=113  OK  sig=1.000  DR=0.929  -> halo000113_sub0035134_z.png
+  [20/22] sub=35173 grnr=114  FAILED
+  [21/22] sub=35078 grnr=111  FAILED
+  [22/22] sub=35079 grnr=111  FAILED
+
+============================================================
+  Done.  QC-passed: 5  Low-quality/failed: 17  Skipped: 752
+  Images -> output/images/
+  Log    -> output/data/image_log.csv

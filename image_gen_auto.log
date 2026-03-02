@@ -1,0 +1,9 @@
+Downloading vis.png images for 774 galaxies ...
+  Fixed aperture: 200.0 kpc half-width
+  Already done: 774, will skip
+  Using 8 parallel workers for faster processing
+
+============================================================
+  Done.  QC-passed: 0  Low-quality/failed: 0  Skipped: 774
+  Images -> output/images/
+  Log    -> output/data/image_log.csv

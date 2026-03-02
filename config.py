@@ -16,11 +16,12 @@ MIN_CLUSTER_MASS_1E10MSUN_H = 3_000    # ~2×10^13 M_sun → more clusters! (was
 
 # ── Galaxy selection inside clusters ─────────────────────────────────────────
 # Masses in TNG internal units: 1e10 M_sun/h  (multiply by 0.6774×1e10 to get M_sun)
-MIN_GAS_MASS_1E10MSUN_H     = 0.00005  # ~3e5 M_sun — EXTREMELY permissive for max images
-MAX_GAS_MASS_1E10MSUN_H     = 300.0    # ~2e12 M_sun — allow very massive systems
-MIN_STELLAR_MASS_1E10MSUN_H = 0.0005   # ~3e6 M_sun — include very tiny dwarfs
-MAX_STELLAR_MASS_1E10MSUN_H = 150.0    # ~1e12 M_sun — allow massive galaxies
-MAX_HALFMASS_GAS_CKPC_H     = 250.0    # ~370 physical kpc — capture super-extended tails
+# ULTRA-PERMISSIVE SETTINGS FOR 2000+ IMAGES!
+MIN_GAS_MASS_1E10MSUN_H     = 0.000001 # ~7e3 M_sun — ULTRA LOW, catch everything!
+MAX_GAS_MASS_1E10MSUN_H     = 1000.0   # ~7e12 M_sun — no upper limit effectively
+MIN_STELLAR_MASS_1E10MSUN_H = 0.00001  # ~7e4 M_sun — extremely tiny objects
+MAX_STELLAR_MASS_1E10MSUN_H = 1000.0   # ~7e12 M_sun — no upper limit effectively  
+MAX_HALFMASS_GAS_CKPC_H     = 500.0    # ~740 physical kpc — allow very extended
 
 # ── Image generation ──────────────────────────────────────────────────────────
 IMAGE_SIZE_PX  = 424                   # Zooniverse Galaxy Zoo standard (px × px)
@@ -45,7 +46,7 @@ DATA_DIR       = "output/data"
 LOGS_DIR       = "output/logs"
 
 # ── Pipeline limits (set to None to process all) ──────────────────────────────
-MAX_CLUSTERS   = 100                   # Process 100 clusters for 1000+ images!
+MAX_CLUSTERS   = None                  # MAXIMUM MODE: Process ALL clusters!
 MAX_GALAXIES_PER_CLUSTER = None        # None = all qualifying galaxies per cluster!
 REQUEST_TIMEOUT = 60                   # seconds per HTTP request
 DOWNLOAD_RETRIES = 3
