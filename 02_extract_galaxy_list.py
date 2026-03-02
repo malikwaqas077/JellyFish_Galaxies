@@ -111,7 +111,18 @@ def fetch_satellite_details(sat_summary):
 def extract_galaxies():
     with open(CLUSTERS_FILE, "r") as f:
         clusters = list(csv.DictReader(f))
-    print(f"Processing {len(clusters)} clusters ...")
+    
+    # Checkpoint file for resume capability
+    CHECKPOINT_FILE = os.path.join(DATA_DIR, ".extraction_checkpoint")
+    start_cluster = 0
+    
+    # Check for existing checkpoint
+    if os.path.exists(CHECKPOINT_FILE):
+        with open(CHECKPOINT_FILE, "r") as f:
+            start_cluster = int(f.read().strip())
+        print(f"Resuming from cluster {start_cluster+1}/{len(clusters)} (checkpoint found)")
+    else:
+        print(f"Processing {len(clusters)} clusters (fresh start)")
 
     all_galaxies = []
     fieldnames = [
@@ -122,8 +133,17 @@ def extract_galaxies():
         "bcg_pos_x", "bcg_pos_y", "bcg_pos_z",
         "cutout_url", "sfr",
     ]
+    
+    # Load existing galaxies if resuming
+    if start_cluster > 0 and os.path.exists(OUTPUT_FILE):
+        with open(OUTPUT_FILE, "r") as f:
+            all_galaxies = list(csv.DictReader(f))
+        print(f"Loaded {len(all_galaxies)} galaxies from previous run")
 
     for ci, cluster in enumerate(clusters):
+        # Skip already processed clusters
+        if ci < start_cluster:
+            continue
         grnr     = int(cluster["grnr"])
         r200_kpc = float(cluster["R_approx_kpc"])
         bcg_pos  = (float(cluster["bcg_pos_x"]),
@@ -160,17 +180,36 @@ def extract_galaxies():
 
         print(f" {len(kept)} kept (gas + stellar mass cuts)")
         all_galaxies.extend(kept)
+        
+        # Save checkpoint after each cluster (enables resume)
+        with open(CHECKPOINT_FILE, "w") as f:
+            f.write(str(ci + 1))
+        
+        # Periodic save every 10 clusters to avoid data loss
+        if (ci + 1) % 10 == 0 or ci == len(clusters) - 1:
+            os.makedirs(DATA_DIR, exist_ok=True)
+            # Sort by grnr then subhalo_id
+            all_galaxies_sorted = sorted(all_galaxies, key=lambda r: (int(r["grnr"]), int(r["subhalo_id"])))
+            with open(OUTPUT_FILE, "w", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=fieldnames)
+                writer.writeheader()
+                writer.writerows(all_galaxies_sorted)
+            print(f"  → Saved {len(all_galaxies)} galaxies (checkpoint: {ci+1}/{len(clusters)})")
 
-    # Sort by grnr then subhalo_id
-    all_galaxies.sort(key=lambda r: (int(r["grnr"]), int(r["subhalo_id"])))
-
+    # Final save
     os.makedirs(DATA_DIR, exist_ok=True)
+    all_galaxies.sort(key=lambda r: (int(r["grnr"]), int(r["subhalo_id"])))
     with open(OUTPUT_FILE, "w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(all_galaxies)
+    
+    # Remove checkpoint on successful completion
+    if os.path.exists(CHECKPOINT_FILE):
+        os.remove(CHECKPOINT_FILE)
 
-    print(f"\nTotal galaxies selected: {len(all_galaxies)}")
+    print(f"\n{'='*60}")
+    print(f"Total galaxies selected: {len(all_galaxies)}")
     print(f"Saved -> {OUTPUT_FILE}")
     return OUTPUT_FILE
 

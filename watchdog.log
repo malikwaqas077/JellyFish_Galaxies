@@ -1242,3 +1242,88 @@
 [2026-03-02 04:30:01] ✓ Extraction complete
 [2026-03-02 04:30:01] 🎉 COMPLETE! 760/774 images (98.1912% success)
 [2026-03-02 04:30:01]    Remaining 14 likely failed permanently (corrupt TNG data)
+[2026-03-02 04:40:01] === Watchdog Check ===
+[2026-03-02 04:40:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 04:40:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 04:40:06] Extraction started (PID: 220385)
+[2026-03-02 04:40:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 04:50:01] === Watchdog Check ===
+[2026-03-02 04:50:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 04:50:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 04:50:06] Extraction started (PID: 220566)
+[2026-03-02 04:50:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 05:00:01] === Watchdog Check ===
+[2026-03-02 05:00:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 05:00:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 05:00:06] Extraction started (PID: 220776)
+[2026-03-02 05:00:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 05:10:01] === Watchdog Check ===
+[2026-03-02 05:10:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 05:10:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 05:10:06] Extraction started (PID: 220942)
+[2026-03-02 05:10:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 05:20:01] === Watchdog Check ===
+[2026-03-02 05:20:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 05:20:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 05:20:06] Extraction started (PID: 221105)
+[2026-03-02 05:20:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 05:30:01] === Watchdog Check ===
+[2026-03-02 05:30:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 05:30:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 05:30:06] Extraction started (PID: 221273)
+[2026-03-02 05:30:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 05:40:01] === Watchdog Check ===
+[2026-03-02 05:40:02] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 05:40:07] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 05:40:07] Extraction started (PID: 221441)
+[2026-03-02 05:40:07] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 05:50:01] === Watchdog Check ===
+[2026-03-02 05:50:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 05:50:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 05:50:06] Extraction started (PID: 221609)
+[2026-03-02 05:50:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 06:00:01] === Watchdog Check ===
+[2026-03-02 06:00:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 06:00:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 06:00:06] Extraction started (PID: 221771)
+[2026-03-02 06:00:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 06:10:01] === Watchdog Check ===
+[2026-03-02 06:10:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 06:10:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 06:10:06] Extraction started (PID: 221986)
+[2026-03-02 06:10:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 06:20:01] === Watchdog Check ===
+[2026-03-02 06:20:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 06:20:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 06:20:06] Extraction started (PID: 222149)
+[2026-03-02 06:20:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 06:30:01] === Watchdog Check ===
+[2026-03-02 06:30:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 06:30:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 06:30:06] Extraction started (PID: 222925)
+[2026-03-02 06:30:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 06:40:01] === Watchdog Check ===
+[2026-03-02 06:40:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 06:40:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 06:40:06] Extraction started (PID: 223086)
+[2026-03-02 06:40:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 06:50:01] === Watchdog Check ===
+[2026-03-02 06:50:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 06:50:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 06:50:06] Extraction started (PID: 223247)
+[2026-03-02 06:50:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 07:00:01] === Watchdog Check ===
+[2026-03-02 07:00:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 07:00:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 07:00:06] Extraction started (PID: 223489)
+[2026-03-02 07:00:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 07:10:01] === Watchdog Check ===
+[2026-03-02 07:10:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 07:10:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 07:10:06] Extraction started (PID: 223650)
+[2026-03-02 07:10:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 07:20:01] === Watchdog Check ===
+[2026-03-02 07:20:01] ⚠️  Extraction appears stuck! Restarting...
+[2026-03-02 07:20:06] Starting galaxy extraction (188 clusters, 2000+ target)
+[2026-03-02 07:20:06] Extraction started (PID: 223838)
+[2026-03-02 07:20:06] Stats: Clusters=188, Galaxies=, Images=

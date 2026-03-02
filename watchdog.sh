@@ -50,6 +50,12 @@ check_image_generation() {
 
 # Check if extraction is complete
 extraction_complete() {
+    # Check if checkpoint file exists (means still running or incomplete)
+    if [ -f "$WORK_DIR/output/data/.extraction_checkpoint" ]; then
+        return 1  # Still in progress
+    fi
+    
+    # Check if galaxy_list.csv exists and has content
     if [ ! -f output/data/galaxy_list.csv ]; then
         return 1  # Not complete
     fi
@@ -62,9 +68,11 @@ extraction_complete() {
         return 1  # No clusters yet
     fi
     
-    # Check if extraction log shows completion
-    if grep -q "Total galaxies selected:" extract_2000plus_restart.log 2>/dev/null || \
-       grep -q "Saved ->" extract_2000plus_restart.log 2>/dev/null; then
+    # Check if extraction log shows completion (no checkpoint = completed)
+    GALAXIES=$(wc -l < output/data/galaxy_list.csv 2>/dev/null || echo 0)
+    GALAXIES=$((GALAXIES - 1))
+    
+    if [ $GALAXIES -gt 0 ] && [ ! -f "$WORK_DIR/output/data/.extraction_checkpoint" ]; then
         return 0  # Complete
     fi
     
@@ -73,7 +81,8 @@ extraction_complete() {
 
 # Check if extraction is stuck (no progress in 30 minutes)
 extraction_stuck() {
-    LOG_FILES="extract_2000plus_restart.log extract_2000plus.log"
+    # Find most recent extraction log
+    LOG_FILES="extract_mixed_gas_restart.log extract_mixed_gas.log extract_2000plus_restart.log extract_2000plus.log"
     
     for LOG_F in $LOG_FILES; do
         if [ -f "$LOG_F" ]; then
@@ -84,7 +93,18 @@ extraction_stuck() {
             
             # If log hasn't been updated in 30 minutes and process is running
             if [ $DIFF -gt 1800 ] && check_extraction; then
+                log "  Log file $LOG_F not updated in $((DIFF/60)) minutes"
                 return 0  # Stuck
+            fi
+            
+            # If checkpoint file exists and hasn't changed in 30 minutes
+            if [ -f "$WORK_DIR/output/data/.extraction_checkpoint" ]; then
+                CKPT_MOD=$(stat -c %Y "$WORK_DIR/output/data/.extraction_checkpoint" 2>/dev/null || echo 0)
+                CKPT_DIFF=$((NOW - CKPT_MOD))
+                if [ $CKPT_DIFF -gt 1800 ] && check_extraction; then
+                    log "  Checkpoint not updated in $((CKPT_DIFF/60)) minutes"
+                    return 0  # Stuck
+                fi
             fi
         fi
     done
@@ -94,8 +114,14 @@ extraction_stuck() {
 
 # Start extraction
 start_extraction() {
-    log "Starting galaxy extraction (188 clusters, 2000+ target)"
-    nohup python3 02_extract_galaxy_list.py > extract_2000plus_restart.log 2>&1 &
+    # Check if we're resuming from checkpoint
+    if [ -f "$WORK_DIR/output/data/.extraction_checkpoint" ]; then
+        RESUME_FROM=$(cat "$WORK_DIR/output/data/.extraction_checkpoint")
+        log "Resuming galaxy extraction from cluster $RESUME_FROM (checkpoint found)"
+    else
+        log "Starting galaxy extraction (fresh run, 188 clusters)"
+    fi
+    nohup python3 02_extract_galaxy_list.py >> extract_mixed_gas_auto.log 2>&1 &
     log "Extraction started (PID: $!)"
 }
 
