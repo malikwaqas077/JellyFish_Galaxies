@@ -79,13 +79,17 @@ def fetch_satellite_details(sat_summary):
         m_star   = d.get("mass_stars",        0) or 0
         r_half_g = d.get("halfmassrad_gas",   0) or 0
 
-        # Gas and stellar mass bounds (exclude gas-free + subclusters)
-        if m_gas  < MIN_GAS_MASS_1E10MSUN_H  or m_gas  > MAX_GAS_MASS_1E10MSUN_H:
-            return None
+        # Stellar mass bounds (we need visible galaxies)
         if m_star < MIN_STELLAR_MASS_1E10MSUN_H or m_star > MAX_STELLAR_MASS_1E10MSUN_H:
             return None
-        # Half-mass radius guard: exclude subclusters / ICM blobs
-        if r_half_g > MAX_HALFMASS_GAS_CKPC_H:
+        
+        # Gas mass bounds (NOW INCLUDES GAS-POOR GALAXIES for classifier training)
+        if m_gas < MIN_GAS_MASS_1E10MSUN_H or m_gas > MAX_GAS_MASS_1E10MSUN_H:
+            return None
+        
+        # Half-mass radius guard: only check if galaxy has significant gas
+        # Gas-poor galaxies (m_gas < 0.01) can have undefined/large r_half_g
+        if m_gas > 0.01 and r_half_g > MAX_HALFMASS_GAS_CKPC_H:
             return None
 
         return {
