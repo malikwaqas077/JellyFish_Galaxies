@@ -1327,3 +1327,13 @@
 [2026-03-02 07:20:06] Starting galaxy extraction (188 clusters, 2000+ target)
 [2026-03-02 07:20:06] Extraction started (PID: 223838)
 [2026-03-02 07:20:06] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 07:28:54] === Watchdog Check ===
+[2026-03-02 07:28:54] ⚠️  Extraction stopped! Restarting...
+[2026-03-02 07:28:54] Starting galaxy extraction (fresh run, 188 clusters)
+[2026-03-02 07:28:54] Extraction started (PID: 223973)
+[2026-03-02 07:28:54] Stats: Clusters=188, Galaxies=, Images=
+[2026-03-02 07:30:01] === Watchdog Check ===
+[2026-03-02 07:30:01] ⚠️  Extraction stopped! Restarting...
+[2026-03-02 07:30:01] Starting galaxy extraction (fresh run, 188 clusters)
+[2026-03-02 07:30:01] Extraction started (PID: 224032)
+[2026-03-02 07:30:01] Stats: Clusters=188, Galaxies=, Images=

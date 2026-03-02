@@ -165,18 +165,23 @@ def extract_galaxies():
         if MAX_GALAXIES_PER_CLUSTER:
             sats = sats[:MAX_GALAXIES_PER_CLUSTER]
 
-        # Fetch full details in parallel
+        # Fetch full details in parallel (reduced workers to avoid API throttling)
         kept = []
-        with ThreadPoolExecutor(max_workers=8) as pool:
+        processed = 0
+        with ThreadPoolExecutor(max_workers=4) as pool:
             futs = [pool.submit(fetch_satellite_details, s) for s in sats]
             for fut in as_completed(futs):
                 row = fut.result()
+                processed += 1
                 if row:
                     row["halo_r200_kpc"] = round(r200_kpc, 1)
                     row["bcg_pos_x"]     = bcg_pos[0]
                     row["bcg_pos_y"]     = bcg_pos[1]
                     row["bcg_pos_z"]     = bcg_pos[2]
                     kept.append(row)
+                # Progress indicator for large clusters
+                if len(sats) > 500 and processed % 100 == 0:
+                    print(f" {processed}/{len(sats)}", end="", flush=True)
 
         print(f" {len(kept)} kept (gas + stellar mass cuts)")
         all_galaxies.extend(kept)
