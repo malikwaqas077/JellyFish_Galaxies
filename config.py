@@ -23,6 +23,13 @@ MIN_STELLAR_MASS_1E10MSUN_H = 0.001    # ~6.8e6 M_sun — visible galaxies only
 MAX_STELLAR_MASS_1E10MSUN_H = 1000.0
 MAX_HALFMASS_GAS_CKPC_H     = 1000.0   # ~1.5 Mpc comoving
 
+# ── Download quality gate ─────────────────────────────────────────────────────
+# Only download HDF5 for subhalos that are likely to produce visible gas images.
+# NONE category (gas=0) and tiny-gas subhalos will produce blank images — skip them.
+# 0.05 × 1e10 M_sun/h ≈ 3.4×10^8 M_sun — enough gas cells for a real image.
+MIN_DOWNLOAD_GAS_MASS = 0.05   # 1e10 M_sun/h units
+SKIP_GAS_CATEGORIES   = {"NONE"}   # always skip fully stripped
+
 # Minimum gas cells in HDF5 cutout before we bother rendering
 MIN_GAS_CELLS = 20
 

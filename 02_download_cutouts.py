@@ -2,8 +2,12 @@
 Step 2 — Download HDF5 cutouts for cataloged subhalos.
 
 Reads subhalo_catalog.csv and downloads the gas particle data
-(Coordinates, Masses, Density) for each subhalo.  Skips files that
-already exist on disk.  Uses parallel workers for speed.
+(Coordinates, Masses, Density) for subhalos that pass the gas quality gate:
+  - gas_category must NOT be in SKIP_GAS_CATEGORIES (default: skips NONE)
+  - mass_gas_1e10msun_h >= MIN_DOWNLOAD_GAS_MASS (default: 0.05)
+
+This prevents wasting bandwidth and disk space on gas-stripped satellites
+that would produce blank images.
 
 Cutout files are saved as:
   output/cutouts/{subhalo_id}.hdf5
@@ -21,7 +25,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 sys.path.insert(0, os.path.dirname(__file__))
 from config import (
     DATA_DIR, CUTOUTS_DIR, HDF5_GAS_FIELDS,
-    PARALLEL_WORKERS, API_KEY,
+    PARALLEL_WORKERS, MIN_DOWNLOAD_GAS_MASS, SKIP_GAS_CATEGORIES,
 )
 from utils.tng_api import download_file
 
@@ -90,6 +94,25 @@ def run():
     with open(CATALOG_CSV) as f:
         catalog = list(csv.DictReader(f))
     print(f"Catalog has {len(catalog)} subhalos.")
+
+    # ── Quality gate: skip gas-empty and gas-too-sparse subhalos ─────────────
+    before = len(catalog)
+    catalog = [
+        r for r in catalog
+        if r.get("gas_category") not in SKIP_GAS_CATEGORIES
+        and float(r.get("mass_gas_1e10msun_h", 0) or 0) >= MIN_DOWNLOAD_GAS_MASS
+    ]
+    skipped_by_filter = before - len(catalog)
+    print(f"Quality gate: skipped {skipped_by_filter} subhalos "
+          f"(NONE category or gas < {MIN_DOWNLOAD_GAS_MASS}×10¹⁰ M☉/h)")
+    print(f"Eligible for download: {len(catalog)} subhalos")
+
+    # Show gas category breakdown of what we will download
+    cats = {}
+    for r in catalog:
+        cats[r.get("gas_category", "?")] = cats.get(r.get("gas_category", "?"), 0) + 1
+    for cat, n in sorted(cats.items()):
+        print(f"  {cat:8s}: {n}")
 
     # Load already-logged IDs (resume support)
     logged_ids = set()

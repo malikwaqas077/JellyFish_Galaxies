@@ -1,15 +1,16 @@
 """
 Step 1 — Catalog all satellite subhalos with gas/stellar properties.
 
-Queries the TNG API for every cluster, then paginates through its satellites
-and records key properties WITHOUT downloading any HDF5 data.  The result is
-a lightweight CSV that tells us exactly which subhalos are worth downloading.
+Reads clusters.csv (produced by 01_find_clusters.py), paginates through
+every satellite in each cluster, fetches full subhalo properties, and
+records them WITHOUT downloading any HDF5 data.
 
-Gas categories written to catalog:
-  LOW    — 0 < gas_mass < 0.1  (×10¹⁰ M_sun/h)   stripped satellites
-  MEDIUM — 0.1 ≤ gas_mass < 1  (×10¹⁰ M_sun/h)   possible stripping
-  HIGH   — gas_mass ≥ 1        (×10¹⁰ M_sun/h)   jellyfish candidates
-  NONE   — gas_mass = 0        (fully stripped)
+Gas categories saved to catalog:
+  NONE   — gas_mass = 0            (fully stripped)
+  LOW    — 0 < gas_mass < 0.1      (stripped, "red & dead")
+  MEDIUM — 0.1 ≤ gas_mass < 1.0   (possible ongoing stripping)
+  HIGH   — gas_mass ≥ 1.0          (gas-rich, prime jellyfish)
+  (masses in 1e10 M_sun/h units)
 
 Writes: output/data/subhalo_catalog.csv
 """
@@ -23,15 +24,17 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 sys.path.insert(0, os.path.dirname(__file__))
 from config import (
     BASE_URL, DATA_DIR,
-    MIN_CLUSTER_MASS_1E10MSUN_H,
     MIN_GAS_MASS_1E10MSUN_H, MAX_GAS_MASS_1E10MSUN_H,
     MIN_STELLAR_MASS_1E10MSUN_H, MAX_STELLAR_MASS_1E10MSUN_H,
     MAX_HALFMASS_GAS_CKPC_H,
-    MAX_CLUSTERS, MAX_GALAXIES_PER_CLUSTER, PARALLEL_WORKERS,
+    MAX_CLUSTERS, MAX_GALAXIES_PER_CLUSTER,
 )
-from utils.tng_api import get_json, paginate
+from utils.tng_api import get_json
 
-CATALOG_CSV = os.path.join(DATA_DIR, "subhalo_catalog.csv")
+CLUSTERS_CSV = os.path.join(DATA_DIR, "clusters.csv")
+CATALOG_CSV  = os.path.join(DATA_DIR, "subhalo_catalog.csv")
+CHECKPOINT   = os.path.join(DATA_DIR, ".catalog_checkpoint")
+
 CATALOG_FIELDS = [
     "subhalo_id", "grnr", "gas_category",
     "mass_gas_1e10msun_h", "mass_stars_1e10msun_h",
@@ -41,6 +44,10 @@ CATALOG_FIELDS = [
     "cutout_url",
 ]
 
+# Pagination early-exit: stop when subhalo total mass drops below this
+MIN_TOTAL_MASS_LOG = 8.5    # log10(M/M_sun) — lower than before to catch stripped sats
+MAX_SATS_TO_PAGE   = 5000   # safety cap per cluster
+
 
 def gas_category(m_gas):
     if m_gas == 0.0:
@@ -49,160 +56,165 @@ def gas_category(m_gas):
         return "LOW"
     elif m_gas < 1.0:
         return "MEDIUM"
-    else:
-        return "HIGH"
+    return "HIGH"
 
 
-def fetch_clusters():
-    """Return list of cluster dicts passing the mass threshold."""
-    print("Fetching cluster list …")
-    url = f"{BASE_URL}/subhalos/"
-    params = {"limit": 100, "order_by": "-mass_gas"}
-    all_subs = paginate(url, params)
-
-    clusters = []
-    for s in all_subs:
-        bcg_mass = s.get("mass_log_msun", 0) or 0
-        # Also accept via SubhaloMassType field (index 4 = stars)
-        m_tot = s.get("mass", 0) or 0
-        # Use primary subhalo of each group: grnr == subhalo index for BCGs
-        if s.get("grnr") != s.get("id"):
-            continue
-        # Filter by minimum halo mass (approximate via BCG total mass)
-        if m_tot < MIN_CLUSTER_MASS_1E10MSUN_H:
-            continue
-        clusters.append(s)
-        if MAX_CLUSTERS and len(clusters) >= MAX_CLUSTERS:
-            break
-
-    print(f"  Found {len(clusters)} clusters above mass threshold.")
-    return clusters
-
-
-def fetch_cluster_r200(grnr):
-    """Fetch R200 for a group/halo."""
-    url = f"{BASE_URL}/halos/{grnr}/"
-    data = get_json(url)
-    if data is None:
-        return None
-    return data.get("Group_R_Crit200", None)   # ckpc/h
-
-
-def fetch_satellites(cluster, r200_ckpc_h):
-    """Return list of satellite rows for one cluster."""
-    grnr      = cluster["id"]
-    bcg_pos   = (cluster.get("pos_x", 0), cluster.get("pos_y", 0), cluster.get("pos_z", 0))
-    # R200 in physical kpc
-    r200_kpc  = (r200_ckpc_h / 0.6774) if r200_ckpc_h else 0
-
+def paginate_satellites(grnr):
+    """Paginate satellite subhalos for one cluster, early-exit below mass floor."""
     url    = f"{BASE_URL}/subhalos/"
-    params = {"limit": 100, "grnr": grnr, "order_by": "-mass_gas"}
-    subs   = paginate(url, params)
+    params = {"limit": 500, "grnr": grnr, "primary_flag": 0,
+              "order_by": "-mass_log_msun"}
+    sats = []
+    while url:
+        data = get_json(url, params=params)
+        if data is None:
+            break
+        for r in data.get("results", []):
+            if r["mass_log_msun"] < MIN_TOTAL_MASS_LOG:
+                return sats
+            sats.append(r)
+            if len(sats) >= MAX_SATS_TO_PAGE:
+                return sats
+        url    = data.get("next")
+        params = {}
+    return sats
 
-    rows = []
-    for s in subs:
-        sid = s.get("id")
-        if sid == grnr:
-            continue   # skip BCG itself
 
-        m_gas   = float(s.get("mass_gas",   0) or 0)
-        m_stars = float(s.get("mass_stars", 0) or 0)
-        r_half  = float(s.get("halfmassrad_gas", 0) or 0)   # ckpc/h
+def fetch_satellite_details(sat_summary, r200_kpc, bcg_pos):
+    """Fetch full subhalo record; return catalog row or None."""
+    try:
+        d = get_json(sat_summary["url"])
+        if d is None:
+            return None
+        if d.get("subhaloflag", 1) == 0:
+            return None
 
-        # Mass filters
-        if m_gas < MIN_GAS_MASS_1E10MSUN_H or m_gas > MAX_GAS_MASS_1E10MSUN_H:
-            continue
-        if m_stars < MIN_STELLAR_MASS_1E10MSUN_H or m_stars > MAX_STELLAR_MASS_1E10MSUN_H:
-            continue
-        # Gas radius filter only for gas-bearing galaxies
+        m_gas   = float(d.get("mass_gas",        0) or 0)
+        m_star  = float(d.get("mass_stars",       0) or 0)
+        r_half  = float(d.get("halfmassrad_gas",  0) or 0)
+
+        # Stellar mass bounds
+        if not (MIN_STELLAR_MASS_1E10MSUN_H <= m_star <= MAX_STELLAR_MASS_1E10MSUN_H):
+            return None
+        # Gas mass bounds
+        if not (MIN_GAS_MASS_1E10MSUN_H <= m_gas <= MAX_GAS_MASS_1E10MSUN_H):
+            return None
+        # Gas radius guard (only meaningful for gas-bearing galaxies)
         if m_gas > 0.01 and r_half > MAX_HALFMASS_GAS_CKPC_H:
-            continue
+            return None
 
-        cutout_url = (f"https://www.tng-project.org/api/TNG-Cluster/"
-                      f"snapshots/99/subhalos/{sid}/cutout.hdf5")
-
-        rows.append({
-            "subhalo_id":            sid,
-            "grnr":                  grnr,
+        return {
+            "subhalo_id":            d["id"],
+            "grnr":                  d["grnr"],
             "gas_category":          gas_category(m_gas),
-            "mass_gas_1e10msun_h":   round(m_gas,   6),
-            "mass_stars_1e10msun_h": round(m_stars, 6),
-            "sfr":                   round(float(s.get("sfr", 0) or 0), 6),
-            "halfmassrad_gas_ckpc_h":round(r_half,  3),
-            "pos_x_ckpc_h":          s.get("pos_x", 0),
-            "pos_y_ckpc_h":          s.get("pos_y", 0),
-            "pos_z_ckpc_h":          s.get("pos_z", 0),
-            "halo_r200_kpc":         round(r200_kpc, 2),
+            "mass_gas_1e10msun_h":   round(m_gas,  6),
+            "mass_stars_1e10msun_h": round(m_star, 6),
+            "sfr":                   round(float(d.get("sfr", 0) or 0), 6),
+            "halfmassrad_gas_ckpc_h":round(r_half, 3),
+            "pos_x_ckpc_h":          round(d["pos_x"], 2),
+            "pos_y_ckpc_h":          round(d["pos_y"], 2),
+            "pos_z_ckpc_h":          round(d["pos_z"], 2),
+            "halo_r200_kpc":         round(r200_kpc, 1),
             "bcg_pos_x":             bcg_pos[0],
             "bcg_pos_y":             bcg_pos[1],
             "bcg_pos_z":             bcg_pos[2],
-            "cutout_url":            cutout_url,
-        })
-
-        if MAX_GALAXIES_PER_CLUSTER and len(rows) >= MAX_GALAXIES_PER_CLUSTER:
-            break
-
-    return rows
+            "cutout_url":            d["cutouts"]["subhalo"],
+        }
+    except Exception:
+        return None
 
 
 def run():
     os.makedirs(DATA_DIR, exist_ok=True)
 
-    # ── Load already-processed subhalo IDs (resume support) ──────────────────
-    done_ids = set()
-    if os.path.exists(CATALOG_CSV):
+    if not os.path.exists(CLUSTERS_CSV):
+        print(f"ERROR: {CLUSTERS_CSV} not found. Run 01_find_clusters.py first.")
+        sys.exit(1)
+
+    with open(CLUSTERS_CSV) as f:
+        clusters = list(csv.DictReader(f))
+    if MAX_CLUSTERS:
+        clusters = clusters[:MAX_CLUSTERS]
+    print(f"Loaded {len(clusters)} clusters from {CLUSTERS_CSV}")
+
+    # Resume support
+    start_ci = 0
+    seen_ids  = set()
+    if os.path.exists(CHECKPOINT):
+        with open(CHECKPOINT) as f:
+            start_ci = int(f.read().strip())
+        print(f"Checkpoint found — resuming from cluster {start_ci + 1}/{len(clusters)}")
+    if os.path.exists(CATALOG_CSV) and start_ci > 0:
         with open(CATALOG_CSV) as f:
             for row in csv.DictReader(f):
-                done_ids.add(int(row["subhalo_id"]))
-        print(f"Resuming — {len(done_ids)} subhalos already cataloged.")
+                seen_ids.add(int(row["subhalo_id"]))
+        print(f"Already cataloged: {len(seen_ids)} subhalos")
 
-    clusters = fetch_clusters()
-    if not clusters:
-        print("No clusters found. Check API_KEY and network.")
-        return
-
-    # Pre-fetch R200 for all clusters in parallel
-    print(f"Fetching R200 for {len(clusters)} clusters …")
-    r200_map = {}
-    with ThreadPoolExecutor(max_workers=PARALLEL_WORKERS) as pool:
-        futs = {pool.submit(fetch_cluster_r200, c["id"]): c["id"] for c in clusters}
-        for fut in as_completed(futs):
-            grnr = futs[fut]
-            r200_map[grnr] = fut.result() or 2000.0   # fallback 2000 ckpc/h
-
-    # ── Stream results to CSV ─────────────────────────────────────────────────
-    mode = "a" if done_ids else "w"
-    fh   = open(CATALOG_CSV, mode, newline="")
+    log_mode = "a" if seen_ids else "w"
+    fh = open(CATALOG_CSV, log_mode, newline="")
     writer = csv.DictWriter(fh, fieldnames=CATALOG_FIELDS)
-    if mode == "w":
+    if log_mode == "w":
         writer.writeheader()
 
-    total = 0
+    total = len(seen_ids)
     cat_counts = {"NONE": 0, "LOW": 0, "MEDIUM": 0, "HIGH": 0}
 
     for ci, cluster in enumerate(clusters):
-        grnr = cluster["id"]
-        print(f"  [{ci+1}/{len(clusters)}] cluster grnr={grnr}", end=" … ", flush=True)
-        rows = fetch_satellites(cluster, r200_map.get(grnr, 2000.0))
-        new_rows = [r for r in rows if int(r["subhalo_id"]) not in done_ids]
-        for row in new_rows:
-            writer.writerow(row)
-            cat_counts[row["gas_category"]] += 1
+        if ci < start_ci:
+            continue
+
+        grnr    = int(cluster["grnr"])
+        r200    = float(cluster["R_approx_kpc"])
+        bcg_pos = (float(cluster["bcg_pos_x"]),
+                   float(cluster["bcg_pos_y"]),
+                   float(cluster["bcg_pos_z"]))
+
+        print(f"  [{ci+1}/{len(clusters)}] grnr={grnr}  M~{cluster['M_approx_msun']}",
+              end="  ...", flush=True)
+
+        sats = paginate_satellites(grnr)
+        print(f"  {len(sats)} candidates", end="  ->", flush=True)
+
+        if not sats:
+            print(" 0 kept")
+            continue
+
+        if MAX_GALAXIES_PER_CLUSTER:
+            sats = sats[:MAX_GALAXIES_PER_CLUSTER]
+
+        kept = 0
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            futs = {pool.submit(fetch_satellite_details, s, r200, bcg_pos): s
+                    for s in sats}
+            for fut in as_completed(futs):
+                row = fut.result()
+                if row and int(row["subhalo_id"]) not in seen_ids:
+                    writer.writerow(row)
+                    seen_ids.add(int(row["subhalo_id"]))
+                    cat_counts[row["gas_category"]] += 1
+                    kept += 1
+                    total += 1
+
         fh.flush()
-        total += len(new_rows)
-        print(f"{len(new_rows)} new satellites (total {total + len(done_ids)})")
-        time.sleep(0.1)
+        print(f"  {kept} kept  (total {total})")
+
+        # Save checkpoint after every cluster
+        with open(CHECKPOINT, "w") as f:
+            f.write(str(ci + 1))
+        time.sleep(0.05)
 
     fh.close()
 
-    grand_total = total + len(done_ids)
-    print(f"\n{'='*50}")
-    print(f"Catalog complete:  {grand_total} subhalos")
+    if os.path.exists(CHECKPOINT):
+        os.remove(CHECKPOINT)
+
+    print(f"\n{'='*55}")
+    print(f"Catalog complete:  {total} subhalos total")
     print(f"  NONE   (fully stripped): {cat_counts['NONE']}")
     print(f"  LOW    (gas-poor):       {cat_counts['LOW']}")
     print(f"  MEDIUM (moderate gas):   {cat_counts['MEDIUM']}")
     print(f"  HIGH   (gas-rich / JF):  {cat_counts['HIGH']}")
-    print(f"Written to: {CATALOG_CSV}")
+    print(f"Saved -> {CATALOG_CSV}")
 
 
 if __name__ == "__main__":
