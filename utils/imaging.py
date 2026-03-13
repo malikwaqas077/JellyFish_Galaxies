@@ -12,11 +12,20 @@ from PIL import Image
 import os
 
 from config import (IMAGE_SIZE_PX, COLORMAP,
-                    VMIN_PERCENTILE, VMAX_PERCENTILE, IMAGES_DIR)
+                    VMIN_PERCENTILE, VMAX_PERCENTILE, IMAGES_DIR,
+                    ARCSINH_STRETCH, ARCSINH_A)
 
 
 def _normalise(image):
-    """Clip to percentile range and scale to [0, 1]."""
+    """
+    Clip to percentile range, scale to [0, 1], then optionally apply an
+    arcsinh stretch for superior dynamic-range rendering.
+
+    arcsinh stretch:  f(x) = arcsinh(x / a) / arcsinh(1 / a)
+    With small a (e.g. 0.05) the faint tail region is boosted strongly
+    while the bright core is compressed — this is how astronomical surveys
+    (HST, JWST, SDSS) display gas density maps.
+    """
     finite = image[np.isfinite(image)]
     if len(finite) == 0:
         return np.zeros_like(image)
@@ -24,7 +33,17 @@ def _normalise(image):
     vmax = np.percentile(finite, VMAX_PERCENTILE)
     if vmax == vmin:
         return np.zeros_like(image)
-    normed = np.clip((image - vmin) / (vmax - vmin), 0, 1)
+
+    # Linear normalisation to [0, 1]
+    normed = np.clip((image - vmin) / (vmax - vmin), 0.0, 1.0)
+
+    if ARCSINH_STRETCH:
+        # arcsinh stretch: compresses bright core, lifts faint tails
+        a = float(ARCSINH_A)
+        scale = float(np.arcsinh(1.0 / a))   # normalisation constant
+        normed = np.arcsinh(normed / a) / scale
+        normed = np.clip(normed, 0.0, 1.0)
+
     return normed
 
 
@@ -57,9 +76,13 @@ def projection_to_png(image, subhalo_id, halo_id,
     rgba = cmap(normed)                          # (N, N, 4) float [0,1]
     rgb_uint8 = (rgba[:, :, :3] * 255).astype(np.uint8)
 
-    # Resize to Zooniverse standard
     pil_img = Image.fromarray(rgb_uint8, mode="RGB")
-    pil_img = pil_img.resize((IMAGE_SIZE_PX, IMAGE_SIZE_PX), Image.LANCZOS)
+
+    # Resize only when the rendered grid differs from the target output size.
+    # When N_PIXELS_GRID == IMAGE_SIZE_PX (the new default) this is skipped,
+    # preserving every rendered pixel without any interpolation artefacts.
+    if pil_img.width != IMAGE_SIZE_PX or pil_img.height != IMAGE_SIZE_PX:
+        pil_img = pil_img.resize((IMAGE_SIZE_PX, IMAGE_SIZE_PX), Image.LANCZOS)
 
     fname = f"halo{halo_id:06d}_sub{subhalo_id:07d}{suffix}.png"
     fpath = os.path.join(IMAGES_DIR, fname)
